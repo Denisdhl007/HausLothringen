@@ -1,6 +1,6 @@
 .S5DivContainer{
     background-color: #def4ff;
-    min-height: 110vh;
+    min-height: 72vh;
     margin: 0;
     font-size: 20px;
     -ms-scroll-snap-type: y mandatory;
@@ -13,20 +13,22 @@
     flex-direction: column;
 }
 
+.S5DivStructure{
+    display: flex;
+    width: 65vw;
+    height: 20vh;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .S5DivTitle{
+    background-color: #93b6c8;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    height: 28vh;
+    height: 30vh;
     justify-content: center;
-}
-
-.S5DivStructure{
-    display: flex;
-    width: 50vw;
-    flex-direction: column;
-    align-items: flex-start;
 }
 
 .S5DivStructure h4{
@@ -40,6 +42,7 @@
 .S5DivH4{
     height: 20vh;
 }
+
 
 .container{
     //width: 1000px;

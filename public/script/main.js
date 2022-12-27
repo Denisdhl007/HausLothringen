@@ -75,6 +75,11 @@ function classToggle() {
 
 // SECTION 6
 
+
+
+
+/*
+
   ( function($) {
   
     $(document).ready(function() {
@@ -127,3 +132,5 @@ function classToggle() {
   })(jQuery);
   
   $('.overlay').addClass('overlay-blue');
+
+  */
