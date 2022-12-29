@@ -134,3 +134,8 @@ function classToggle() {
   $('.overlay').addClass('overlay-blue');
 
   */
+
+
+
+
+  // SECTION 7

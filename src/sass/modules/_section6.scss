@@ -7,13 +7,12 @@
 }
 
 .S6DivTitle{
-    background-color: #93b6c8;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-    height: 35vh;
-    justify-content: center;
+  background-color: #e8e5e2;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 35vh;
+  justify-content: center;
 }
 
 .S6DivStructure h4{
@@ -24,27 +23,44 @@
     font-size: 25px;
 }
 
+.containerS6header{
+  display: flex;
+  background-color: rgb(232, 229, 226);
+  justify-content: center;
+  width: 100vw;
+}
+
+.div4header{
+  display: flex;
+  height: 13vh;
+  width: 23vw;
+  margin-top: 3vh;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 30px;
+}
 
 .S6ContainerStructure{
   display: flex;
+  background-color: rgb(232, 229, 226);
+  height: 80vh;
+  justify-content: center;
 }
 
-
-
-
 .containerS6 {
-  width: 285px;
-  height: 278px;
-  
+  width: 17.9rem;
+  height: 23.6rem;
+  font-size: 50px;
   // position: absolute;
   top:0; right: 0; left: 0; bottom: 0;
-  margin: auto;
-  
+  margin: 1vw;
+  /*
   background: url("https://i.pinimg.com/564x/6f/5a/b1/6f5ab1b470beeeeaf285bb451c63ac8f.jpg");
   background-color: black;
+    */
   background-size: cover;
   cursor: pointer;
-  
   -webkit-box-shadow: 0 0 5px #000;
         box-shadow: 0 0 5px #000;
   }
@@ -52,56 +68,44 @@
 .overlay {
   width: 100%;
   height: 100%;
-  
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 2fr 2fr 1fr;
-  
-  background: rgba(77, 77, 77, .9);
+  // grid-template-rows: 1fr 2fr 2fr;
+  background: rgba(101, 193, 255, 0.64);
   // color: $bg;
   opacity: 0;
   transition: all 0.5s;
-  
-  font-family: 'Playfair Display', serif;
 }
 
-
 .items {
-  padding-left: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   letter-spacing: 3px;
+  transition: all 0.7s;
 }
 
 .head {
   font-size: 30px;
   line-height: 40px;
-  
   transform: translateY(40px);
   transition: all 0.7s;
   hr {
     display: block;
     width: 0;
-    
     border: none;
     border-bottom: solid 2px;
-    
     position: absolute;
     bottom: 0; left:20px;
-    
     transition: all .5s;
   }
 }
 
 .price {
-  font-size: 22px;
-  line-height: 10px;
-  font-weight: bold;  
+  font-size: 20px;
+  font-weight: bold;
   opacity: 0;
   transform: translateY(40px);
   transition: all 0.7s;
-  .old {
-    text-decoration: line-through;
-    color: lighten(rgb(77, 77, 77),40%);
-  }
 }
 
 .cart {
@@ -121,6 +125,12 @@
 
 .containerS6:hover .overlay {
   opacity: 1;
+
+  & .items{
+    transform: translateY(0px);
+
+  }
+
   & .head {
     transform: translateY(0px);
   }

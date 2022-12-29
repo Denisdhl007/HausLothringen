@@ -249,7 +249,7 @@ body{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%);
   display: flex;
   width: 33vw;
   height: 15vh;
@@ -260,11 +260,40 @@ body{
 }
 
 .divImageH1{
+  transform: translateY(-50%);
   font-size: 50px;
+}
+
+.divImageH1 span{
+  display: inline-block;
+  font-size: 50px;
+  opacity: 10%;
+  animation: animate 1s linear forwards;
 }
 
 .divImageH2{
   font-size: 25px;
+  transform: translateY(-50%);
+}
+
+.divImageH2 span{
+  display: inline-block;
+  font-size: 25px;
+  opacity: 10%;
+  animation: animate 1s linear forwards;
+}
+
+@keyframes animate{
+  0%{
+    opacity:0;
+    transform: rotateY(90deg);
+    filter:blur(20px);
+  }
+  100%{
+    opacity:1;
+    transform: rotateY(0deg);
+    filter:blur(0px);
+  }
 }
 
 .divTextFlow{
