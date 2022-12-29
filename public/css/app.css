@@ -22959,8 +22959,7 @@ p {
 
 .S7DivStructure {
   display: flex;
-  padding-right: 20vw;
-  padding-left: 20vw;
+  width: 65vw;
   flex-direction: column;
   align-items: flex-start;
 }
@@ -22981,8 +22980,7 @@ p {
 }
 
 .divHoverCountdown {
-  border: 1px solid rgb(196, 13, 13);
-  height: 15vh;
+  height: 5vh;
 }
 
 @property --num {
