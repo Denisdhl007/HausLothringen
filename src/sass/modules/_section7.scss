@@ -34,8 +34,10 @@
 
 .divHoverCountdown{
   display: flex;
-  height: 15vh;
-  align-items: flex-end;
+  height: 14vh;
+  align-items: center;
+  margin-left: 10px;
+  width: 9vw;
 }
 
 @property --num {
@@ -47,8 +49,9 @@
   .divS7 {
     transition: --num 5s;
     counter-set: num var(--num);
-    font-size: 40px;
+    font-size: 60px;
     // font: 800 40px system-ui;
+
   }
 
   .divS7::after {
@@ -57,7 +60,7 @@
   }
 
   .divS7:hover {
-    --num: 109;
+    --num: 127;
   }
 
 .myDivDiscover{

@@ -22781,26 +22781,26 @@ p {
   height: 20vh;
 }
 
-.container {
+.containerS5 {
   position: relative;
   display: flex;
   justify-content: space-between;
 }
 
-.container .card {
+.containerS5 .cardS5 {
   position: relative;
   cursor: pointer;
   width: 300px;
   margin: 10px;
 }
 
-.container .card .face {
+.containerS5 .cardS5 .face {
   height: 200px;
   transition: 0.5s;
   border-radius: 5px;
 }
 
-.container .card .face.face1 {
+.containerS5 .cardS5 .face.face1 {
   position: relative;
   background: #333;
   display: flex;
@@ -22810,26 +22810,26 @@ p {
   transform: translateY(100px);
 }
 
-.container .card:hover .face.face1 {
+.containerS5 .cardS5:hover .face.face1 {
   background: #bdf4ff;
   transform: translateY(0);
 }
 
-.container .card .face.face1 .content {
+.containerS5 .card .face.face1 .content {
   opacity: 0.2;
   transition: 0.5s;
   color: black;
 }
 
-.container .card:hover .face.face1 .content {
+.containerS5 .cardS5:hover .face.face1 .content {
   opacity: 1;
 }
 
-.container .card .face.face1 .content img {
+.containerS5 .cardS5 .face.face1 .content img {
   max-width: 100px;
 }
 
-.container .card .face.face1 .content h3, .container .card .face.face1 .content .h3 {
+.containerS5 .cardS5 .face.face1 .content h3, .containerS5 .cardS5 .face.face1 .content .h3 {
   margin: 0px 0 0;
   padding: 0;
   color: #fff;
@@ -22837,7 +22837,7 @@ p {
   font-size: 1.5em;
 }
 
-.container .card .face.face2 {
+.containerS5 .cardS5 .face.face2 {
   position: relative;
   background: #fff;
   display: flex;
@@ -22849,16 +22849,16 @@ p {
   transform: translateY(-100px);
 }
 
-.container .card:hover .face.face2 {
+.containerS5 .cardS5:hover .face.face2 {
   transform: translateY(0);
 }
 
-.container .card .face.face2 .content p {
+.containerS5 .cardS5 .face.face2 .content p {
   margin: 0;
   padding: 0;
 }
 
-.container .card .face.face2 .content a {
+.containerS5 .cardS5 .face.face2 .content a {
   margin: 15px 0 0;
   display: inline-block;
   text-decoration: none;
@@ -22869,7 +22869,7 @@ p {
   font-size: 15px;
 }
 
-.container .card .face.face2 .content a:hover {
+.containerS5 .cardS5 .face.face2 .content a:hover {
   background: #333;
   color: #fff;
   transition: 0.5s;
@@ -23061,8 +23061,10 @@ p {
 
 .divHoverCountdown {
   display: flex;
-  height: 15vh;
-  align-items: flex-end;
+  height: 14vh;
+  align-items: center;
+  margin-left: 10px;
+  width: 9vw;
 }
 
 @property --num {
@@ -23073,7 +23075,7 @@ p {
 .divS7 {
   transition: --num 5s;
   counter-set: num var(--num);
-  font-size: 40px;
+  font-size: 60px;
 }
 
 .divS7::after {
@@ -23082,7 +23084,7 @@ p {
 }
 
 .divS7:hover {
-  --num: 109;
+  --num: 127;
 }
 
 .myDivDiscover {
@@ -23095,135 +23097,156 @@ p {
   height: 5vh;
 }
 
-.S8DivContainer {
-  background-color: rgb(40, 60, 128);
+.containerS8 {
+  flex-grow: 1;
+  max-width: 960px;
+  margin-top: 4vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-@define-mixin atMedium {
-  @media (min-width: 600px) {
-    @mixin-content;
-  }
-}
-@define-mixin atLarge {
-  @media (min-width: 900px) {
-    @mixin-content;
-  }
-}
-* {
-  box-sizing: border-box;
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 32px;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans";
+  list-style: none;
 }
 
-.content-wrapper {
-  margin: 0 auto;
-  max-width: 1200px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  padding: 0.5rem;
+.cards__item {
+  height: 400px;
 }
 
-.news-card {
-  border: 0px solid aqua;
-  margin: 0.5rem;
+.card {
   position: relative;
-  height: 12rem;
-  overflow: hidden;
-  border-radius: 0.5rem;
-  flex: 1;
-  min-width: 290px;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
 }
-.news-card::before {
+.card::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  z-index: 20;
+  width: 50%;
   height: 100%;
-  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 80%);
-  z-index: 0;
+  pointer-events: none;
 }
-.news-card__card-link {
+.card:nth-child(1) {
+  background-image: linear-gradient(45deg, #dadada, #ffdeed);
+}
+.card:nth-child(2) {
+  background-image: linear-gradient(45deg, #c6fff4, #b0ddf3);
+}
+.card:nth-child(3) {
+  background-image: linear-gradient(45deg, #e7e7e7, rgba(254, 247, 185, 0.7803921569));
+}
+
+.card__frame {
   position: absolute;
-  top: 0;
+  top: 40px;
   left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  /*     background: rgba(255,0,0,.5); */
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
 }
-.news-card__image {
-  width: 100%;
-  height: 100%;
+
+.card__picture {
+  margin-bottom: 12px;
+}
+.card__picture img {
   display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-  transition: transform 3s ease;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  position: relative;
-  z-index: -1;
+  max-width: 100%;
+  height: 215px;
+  width: 215px;
 }
-.news-card__text-wrapper {
-  position: absolute;
-  bottom: 0rem;
-  padding: 1rem;
-  color: white;
-  /*     background-color: rgba(0, 0, 0, 0.4); */
-  transition: background-color 1.5s ease;
+
+.card__title {
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 0.08em;
 }
-.news-card__title {
-  transition: color 1s ease;
-  margin-bottom: 0.5rem;
-}
-.news-card__post-date {
-  font-size: 0.7rem;
-  margin-bottom: 0.5rem;
-  color: #CCC;
-}
-.news-card__details-wrapper {
-  max-height: 0;
-  opacity: 0;
-  transition: max-height 1.5s ease, opacity 1s ease;
-}
-.news-card__excerpt {
-  font-weight: 300;
-}
-.news-card__read-more {
-  background: black;
-  color: #bbb;
-  display: block;
-  padding: 0.4rem 0.6rem;
-  border-radius: 0.3rem;
-  margin-top: 1rem;
-  border: 1px solid #444;
-  font-size: 0.8rem;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+
+h2 a, .h2 a {
   text-decoration: none;
-  width: 7rem;
-  margin-left: auto;
-  position: relative;
-  z-index: 5;
+  color: black;
 }
-.news-card__read-more i {
-  position: relative;
-  left: 0.2rem;
-  color: #888;
-  transition: left 0.5s ease, color 0.6s ease;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+
+h2 a:hover, .h2 a:hover {
+  text-decoration: none;
+  color: #bceffc;
 }
-.news-card__read-more:hover i {
-  left: 0.5rem;
-  color: yellow;
+
+.card__overlay {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.card__overlay::before {
+  content: "Read";
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.card__overlay:hover, .card__overlay:focus {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: none;
+  border-radius: 0;
+  opacity: 0.9;
+}
+.card__overlay:hover::before, .card__overlay:focus::before {
+  content: none;
+}
+.card:nth-child(1) .card__overlay {
+  background-image: linear-gradient(45deg, #e4e4e4, hsl(191deg, 100%, 78%));
+}
+.card:nth-child(2) .card__overlay {
+  background-image: linear-gradient(45deg, #e6e6e6, #e1f5ff);
+}
+.card:nth-child(3) .card__overlay {
+  background-image: linear-gradient(45deg, #c0c0c0, #fffacf);
+}
+
+.card__content {
+  z-index: 1;
+  padding: 20px;
+  line-height: 1.4;
+  opacity: 0;
+  visibility: hidden;
+  box-sizing: border-box;
+  pointer-events: none;
+  transition: 0s;
+}
+.card__overlay:hover ~ .card__content {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.2s 0.3s;
+}
+.card__content h2, .card__content .h2 {
+  margin: 0;
+  margin-bottom: 16px;
 }
 
 .S9DivContainer {
