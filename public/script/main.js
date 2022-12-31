@@ -67,9 +67,7 @@ function classToggle() {
     var el = document.querySelector('.icon-cards__content');
     el.classList.toggle('step-animation');
   }
-  
   document.querySelector('#toggle-animation').addEventListener('click', classToggle);
-
 
 
 
@@ -139,3 +137,114 @@ function classToggle() {
 
 
   // SECTION 7
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // SECTION 8
+
+
+
+
+
+  // SECTION 9
+
+  // TEST
+
+  // set the data
+var data = [
+  {x: "White", value: 223553265},
+  {x: "Black or African American", value: 38929319},
+  {x: "American Indian and Alaska Native", value: 2932248},
+  {x: "Asian", value: 14674252},
+  {x: "Native Hawaiian and Other Pacific Islander", value: 540013},
+  {x: "Some Other Race", value: 19107368},
+  {x: "Two or More Races", value: 9009073}
+];
+
+
+anychart.onDocumentReady(function() {
+
+  // set the data
+  var data = [
+      {x: "White", value: 223553265, exploded: true},
+      {x: "Black or African American", value: 38929319},
+      {x: "American Indian and Alaska Native", value: 2932248},
+      {x: "Asian", value: 14674252},
+      {x: "Native Hawaiian and Other Pacific Islander", value: 540013},
+      {x: "Some Other Race", value: 19107368},
+      {x: "Two or More Races", value: 9009073}
+  ];
+
+  
+  // create the chart
+  var chart = anychart.pie();
+
+  // set the chart title
+  chart.title("Population by Race for the United States: 2010 Census");
+
+  // add the data
+  chart.data(data);
+  
+  // sort elements
+  chart.sort("desc");  
+  
+  // set legend position
+  chart.legend().position("right");
+  // set items layout
+  chart.legend().itemsLayout("vertical");  
+
+  // display the chart in the container
+  chart.containerS9('containerS9');
+  chart.draw();
+
+});
+
+
+
+
+
+//   // <block:setup:1>
+// const data = {
+//   labels: [
+//     'Red',
+//     'Blue',
+//     'Yellow'
+//   ],
+//   datasets: [{
+//     label: 'My First Dataset',
+//     data: [300, 50, 100],
+//     backgroundColor: [
+//       'rgb(255, 99, 132)',
+//       'rgb(54, 162, 235)',
+//       'rgb(255, 205, 86)'
+//     ],
+//     hoverOffset: 4
+//   }]
+// };
+// // </block:setup>
+
+// // <block:config:0>
+// const config = {
+//   type: 'doughnut',
+//   data: data,
+// };
+// // </block:config>
+
+// module.exports = {
+//   actions: [],
+//   config: config,
+// };
+
+
+

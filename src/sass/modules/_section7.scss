@@ -10,8 +10,6 @@
   .S7DivStructure{
     display: flex;
     width: 65vw;
-    // height: 20vh;
-    flex-direction: column;
     align-items: flex-start;
 }
 
@@ -29,21 +27,16 @@
     height: 80vh;
     justify-content: center;
   }
-
-  
-
-// .divHoverStructure{
-//     border: 1px solid #414aff;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-// }
-
-.divHoverCountdown{
-    height: 5vh;
+.divS7SousStructure{
+  display: flex;
+  flex-direction: column;
 }
 
+.divHoverCountdown{
+  display: flex;
+  height: 15vh;
+  align-items: flex-end;
+}
 
 @property --num {
     syntax: "<integer>";
@@ -68,11 +61,14 @@
   }
 
 .myDivDiscover{
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-
+.divS7spacing{
+  width: 40vw;
+  height: 5vh;
+}
 
 
 
