@@ -22024,7 +22024,7 @@ li {
 }
 
 /*--------------- Cube ---------------*/
-.cube {
+.cubeS2 {
   width: 100px;
   height: 100px;
   position: absolute;
@@ -22033,78 +22033,78 @@ li {
   transform-style: preserve-3d;
 }
 
-.cube_count_1 {
+.cubeS2_count_1 {
   z-index: 2;
   left: 50px;
-  -webkit-animation: cube 2s 1s ease infinite;
-          animation: cube 2s 1s ease infinite;
+  -webkit-animation: cubeS2 2s 1s ease infinite;
+          animation: cubeS2 2s 1s ease infinite;
 }
-.cube_count_1 .cube__face {
+.cubeS2_count_1 .cubeS2__face {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
 
-.cube_count_2 {
+.cubeS2_count_2 {
   z-index: 1;
   top: 38px;
   left: -16px;
-  -webkit-animation: cube 2s 1.1s ease infinite;
-          animation: cube 2s 1.1s ease infinite;
+  -webkit-animation: cubeS2 2s 1.1s ease infinite;
+          animation: cubeS2 2s 1.1s ease infinite;
 }
-.cube_count_2 .cube__face {
+.cubeS2_count_2 .cubeS2__face {
   -webkit-animation-delay: 1.1s;
           animation-delay: 1.1s;
 }
 
-.cube_count_3 {
+.cubeS2_count_3 {
   z-index: 1;
   top: 38px;
   left: 116px;
-  -webkit-animation: cube 2s 1.2s ease infinite;
-          animation: cube 2s 1.2s ease infinite;
+  -webkit-animation: cubeS2 2s 1.2s ease infinite;
+          animation: cubeS2 2s 1.2s ease infinite;
 }
-.cube_count_3 .cube__face {
+.cubeS2_count_3 .cubeS2__face {
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s;
 }
 
-.cube_count_4 {
+.cubeS2_count_4 {
   z-index: 2;
   top: 116px;
   left: -16px;
-  -webkit-animation: cube 2s 1.1s ease infinite;
-          animation: cube 2s 1.1s ease infinite;
+  -webkit-animation: cubeS2 2s 1.1s ease infinite;
+          animation: cubeS2 2s 1.1s ease infinite;
 }
-.cube_count_4 .cube__face {
+.cubeS2_count_4 .cubeS2__face {
   -webkit-animation-delay: 1.1s;
           animation-delay: 1.1s;
 }
 
-.cube_count_5 {
+.cubeS2_count_5 {
   z-index: 1;
   top: 116px;
   left: 116px;
-  -webkit-animation: cube 2s 1.2s ease infinite;
-          animation: cube 2s 1.2s ease infinite;
+  -webkit-animation: cubeS2 2s 1.2s ease infinite;
+          animation: cubeS2 2s 1.2s ease infinite;
 }
-.cube_count_5 .cube__face {
+.cubeS2_count_5 .cubeS2__face {
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s;
 }
 
-.cube_count_6 {
+.cubeS2_count_6 {
   z-index: 0;
   top: 154px;
   left: 50px;
-  -webkit-animation: cube 2s 1.3s ease infinite;
-          animation: cube 2s 1.3s ease infinite;
+  -webkit-animation: cubeS2 2s 1.3s ease infinite;
+          animation: cubeS2 2s 1.3s ease infinite;
 }
-.cube_count_6 .cube__face {
+.cubeS2_count_6 .cubeS2__face {
   -webkit-animation-delay: 1.3s;
           animation-delay: 1.3s;
 }
 
-.cube__face {
+.cubeS2__face {
   width: 100px;
   height: 100px;
   position: absolute;
@@ -22112,60 +22112,60 @@ li {
   border: 6px solid black;
 }
 
-.cube__face--front {
+.cubeS2__face--front {
   box-shadow: inset -6px -6px 0 0 black;
-  -webkit-animation: cube-face-front 2s ease infinite;
-          animation: cube-face-front 2s ease infinite;
+  -webkit-animation: cubeS2-face-front 2s ease infinite;
+          animation: cubeS2-face-front 2s ease infinite;
 }
 
-.cube__face--right {
-  -webkit-animation: cube-face-right 2s ease infinite;
-          animation: cube-face-right 2s ease infinite;
+.cubeS2__face--right {
+  -webkit-animation: cubeS2-face-right 2s ease infinite;
+          animation: cubeS2-face-right 2s ease infinite;
 }
 
-.cube__face--back {
-  -webkit-animation: cube-face-back 2s ease infinite;
-          animation: cube-face-back 2s ease infinite;
+.cubeS2__face--back {
+  -webkit-animation: cubeS2-face-back 2s ease infinite;
+          animation: cubeS2-face-back 2s ease infinite;
 }
 
-.cube__face--left {
+.cubeS2__face--left {
   box-shadow: inset 6px -6px 0 0 black;
-  -webkit-animation: cube-face-left 2s ease infinite;
-          animation: cube-face-left 2s ease infinite;
+  -webkit-animation: cubeS2-face-left 2s ease infinite;
+          animation: cubeS2-face-left 2s ease infinite;
 }
 
-.cube__face--top {
+.cubeS2__face--top {
   box-shadow: inset -6px 6px 0 0 black;
-  -webkit-animation: cube-face-top 2s ease infinite;
-          animation: cube-face-top 2s ease infinite;
+  -webkit-animation: cubeS2-face-top 2s ease infinite;
+          animation: cubeS2-face-top 2s ease infinite;
 }
 
-.cube__face--front {
+.cubeS2__face--front {
   transform: rotateY(0deg) translateZ(50px);
 }
 
-.cube__face--right {
+.cubeS2__face--right {
   transform: rotateY(90deg) translateZ(50px);
 }
 
-.cube__face--back {
+.cubeS2__face--back {
   transform: rotateY(180deg) translateZ(50px);
 }
 
-.cube__face--left {
+.cubeS2__face--left {
   transform: rotateY(-90deg) translateZ(50px);
 }
 
-.cube__face--top {
+.cubeS2__face--top {
   transform: rotateX(90deg) translateZ(50px);
 }
 
-.cube__face--bottom {
+.cubeS2__face--bottom {
   transform: rotateX(-90deg) translateZ(50px);
 }
 
 /*--------------- Animation ---------------*/
-@-webkit-keyframes cube {
+@-webkit-keyframes cubeS2 {
   0% {
     transform: rotateX(-36deg) rotateY(45deg) rotateZ(0);
   }
@@ -22173,7 +22173,7 @@ li {
     transform: rotateX(-126deg) rotateY(0deg) rotateZ(-45deg);
   }
 }
-@keyframes cube {
+@keyframes cubeS2 {
   0% {
     transform: rotateX(-36deg) rotateY(45deg) rotateZ(0);
   }
@@ -22181,7 +22181,7 @@ li {
     transform: rotateX(-126deg) rotateY(0deg) rotateZ(-45deg);
   }
 }
-@-webkit-keyframes cube-face-front {
+@-webkit-keyframes cubeS2-face-front {
   0% {
     box-shadow: inset -6px -6px 0 0 black;
   }
@@ -22189,7 +22189,7 @@ li {
     box-shadow: inset 0 0 0 0 black;
   }
 }
-@keyframes cube-face-front {
+@keyframes cubeS2-face-front {
   0% {
     box-shadow: inset -6px -6px 0 0 black;
   }
@@ -22197,7 +22197,7 @@ li {
     box-shadow: inset 0 0 0 0 black;
   }
 }
-@-webkit-keyframes cube-face-right {
+@-webkit-keyframes cubeS2-face-right {
   0% {
     box-shadow: inset 0 0 0 0 black;
   }
@@ -22208,7 +22208,7 @@ li {
     box-shadow: inset 6px -6px 0 0 black;
   }
 }
-@keyframes cube-face-right {
+@keyframes cubeS2-face-right {
   0% {
     box-shadow: inset 0 0 0 0 black;
   }
@@ -22219,7 +22219,7 @@ li {
     box-shadow: inset 6px -6px 0 0 black;
   }
 }
-@-webkit-keyframes cube-face-back {
+@-webkit-keyframes cubeS2-face-back {
   0% {
     box-shadow: inset 0 0 0 0 black;
   }
@@ -22227,7 +22227,7 @@ li {
     box-shadow: inset -6px -6px 0 0 black;
   }
 }
-@keyframes cube-face-back {
+@keyframes cubeS2-face-back {
   0% {
     box-shadow: inset 0 0 0 0 black;
   }
@@ -22235,7 +22235,7 @@ li {
     box-shadow: inset -6px -6px 0 0 black;
   }
 }
-@-webkit-keyframes cube-face-left {
+@-webkit-keyframes cubeS2-face-left {
   0% {
     box-shadow: inset 6px -6px 0 0 black;
   }
@@ -22243,7 +22243,7 @@ li {
     box-shadow: inset 0 0 0 0 black;
   }
 }
-@keyframes cube-face-left {
+@keyframes cubeS2-face-left {
   0% {
     box-shadow: inset 6px -6px 0 0 black;
   }
@@ -22251,7 +22251,7 @@ li {
     box-shadow: inset 0 0 0 0 black;
   }
 }
-@-webkit-keyframes cube-face-top {
+@-webkit-keyframes cubeS2-face-top {
   0% {
     box-shadow: inset -6px 6px 0 0 black;
   }
@@ -22262,7 +22262,7 @@ li {
     box-shadow: inset 6px -6px 0 0 black;
   }
 }
-@keyframes cube-face-top {
+@keyframes cubeS2-face-top {
   0% {
     box-shadow: inset -6px 6px 0 0 black;
   }
@@ -23294,7 +23294,7 @@ p {
 }
 
 .divS7Last {
-  width: 25vw;
+  width: 10vw;
   height: 10vh;
 }
 
@@ -23339,13 +23339,13 @@ p {
   pointer-events: none;
 }
 .card:nth-child(1) {
-  background-image: linear-gradient(45deg, #dadada, #ffdeed);
+  background-image: linear-gradient(45deg, #c6fff4, #b0ddf3);
 }
 .card:nth-child(2) {
   background-image: linear-gradient(45deg, #c6fff4, #b0ddf3);
 }
 .card:nth-child(3) {
-  background-image: linear-gradient(45deg, #e7e7e7, rgba(254, 247, 185, 0.7803921569));
+  background-image: linear-gradient(45deg, #c6fff4, #b0ddf3);
 }
 
 .card__frame {
@@ -23421,13 +23421,13 @@ h2 a:hover, .h2 a:hover {
   content: none;
 }
 .card:nth-child(1) .card__overlay {
-  background-image: linear-gradient(45deg, #e4e4e4, hsl(191deg, 100%, 78%));
+  background-image: linear-gradient(45deg, #ffffff, hsl(191deg, 100%, 78%));
 }
 .card:nth-child(2) .card__overlay {
-  background-image: linear-gradient(45deg, #e6e6e6, #e1f5ff);
+  background-image: linear-gradient(45deg, #ffffff, hsl(191deg, 100%, 78%));
 }
 .card:nth-child(3) .card__overlay {
-  background-image: linear-gradient(45deg, #c0c0c0, #fffacf);
+  background-image: linear-gradient(45deg, #ffffff, hsl(191deg, 100%, 78%));
 }
 
 .card__content {
