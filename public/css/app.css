@@ -22278,6 +22278,11 @@ li {
   text-decoration: none;
 }
 
+.typewrite:hover {
+  color: black;
+  text-decoration: none;
+}
+
 .S3DivContainer {
   height: 100vh;
   display: flex;
@@ -22811,8 +22816,9 @@ p {
 }
 
 .containerS5 .cardS5:hover .face.face1 {
-  background: #bdf4ff;
+  background: rgba(127, 233, 255, 0.862745098);
   transform: translateY(0);
+  color: black;
 }
 
 .containerS5 .card .face.face1 .content {
@@ -22823,6 +22829,7 @@ p {
 
 .containerS5 .cardS5:hover .face.face1 .content {
   opacity: 1;
+  color: black;
 }
 
 .containerS5 .cardS5 .face.face1 .content img {
@@ -22921,11 +22928,12 @@ p {
 .S6ContainerStructure {
   display: flex;
   background-color: rgb(232, 229, 226);
-  height: 80vh;
   justify-content: center;
+  width: 100vw;
+  height: 80vh;
 }
 
-.containerS6 {
+.containerS6-1 {
   width: 17.9rem;
   height: 23.6rem;
   font-size: 50px;
@@ -22934,13 +22942,63 @@ p {
   left: 0;
   bottom: 0;
   margin: 1vw;
-  /*
-  background: url("https://i.pinimg.com/564x/6f/5a/b1/6f5ab1b470beeeeaf285bb451c63ac8f.jpg");
+  background: url("../../../public/img/istockphoto-1001112154-612x612.jpeg");
   background-color: black;
-    */
   background-size: cover;
   cursor: pointer;
   box-shadow: 0 0 5px #000;
+  filter: contrast(120%);
+}
+
+.containerS6-2 {
+  width: 17.9rem;
+  height: 23.6rem;
+  font-size: 50px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 1vw;
+  background: url("../../../public/img/istockphoto-1131960338-612x612.jpeg");
+  background-color: black;
+  background-size: cover;
+  cursor: pointer;
+  box-shadow: 0 0 5px #000;
+  filter: contrast(120%);
+}
+
+.containerS6-3 {
+  width: 17.9rem;
+  height: 23.6rem;
+  font-size: 50px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 1vw;
+  background: url("../../../public/img/istockphoto-1368449529-612x612.jpeg");
+  background-color: black;
+  background-size: cover;
+  cursor: pointer;
+  box-shadow: 0 0 5px #000;
+  filter: contrast(120%);
+}
+
+.containerS6-4 {
+  width: 17.9rem;
+  height: 23.6rem;
+  font-size: 50px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 1vw;
+  background: url("../../../public/img/istockphoto-187041226-612x612.jpeg");
+  background-color: black;
+  background-size: cover;
+  cursor: pointer;
+  box-shadow: 0 0 5px #000;
+  filter: contrast(120%);
 }
 
 .overlay {
@@ -23000,25 +23058,97 @@ p {
   margin-left: 10px;
 }
 
-.containerS6:hover .overlay {
+.containerS6-1:hover .overlay {
   opacity: 1;
 }
-.containerS6:hover .overlay .items {
+.containerS6-1:hover .overlay .items {
   transform: translateY(0px);
 }
-.containerS6:hover .overlay .head {
+.containerS6-1:hover .overlay .head {
   transform: translateY(0px);
 }
-.containerS6:hover .overlay hr {
+.containerS6-1:hover .overlay hr {
   width: 75px;
   transition-delay: 0.4s;
 }
-.containerS6:hover .overlay .price {
+.containerS6-1:hover .overlay .price {
   transform: translateY(0px);
   transition-delay: 0.3s;
   opacity: 1;
 }
-.containerS6:hover .overlay .cart {
+.containerS6-1:hover .overlay .cart {
+  transform: translateY(0px);
+  transition-delay: 0.6s;
+  opacity: 1;
+}
+
+.containerS6-2:hover .overlay {
+  opacity: 1;
+}
+.containerS6-2:hover .overlay .items {
+  transform: translateY(0px);
+}
+.containerS6-2:hover .overlay .head {
+  transform: translateY(0px);
+}
+.containerS6-2:hover .overlay hr {
+  width: 75px;
+  transition-delay: 0.4s;
+}
+.containerS6-2:hover .overlay .price {
+  transform: translateY(0px);
+  transition-delay: 0.3s;
+  opacity: 1;
+}
+.containerS6-2:hover .overlay .cart {
+  transform: translateY(0px);
+  transition-delay: 0.6s;
+  opacity: 1;
+}
+
+.containerS6-3:hover .overlay {
+  opacity: 1;
+}
+.containerS6-3:hover .overlay .items {
+  transform: translateY(0px);
+}
+.containerS6-3:hover .overlay .head {
+  transform: translateY(0px);
+}
+.containerS6-3:hover .overlay hr {
+  width: 75px;
+  transition-delay: 0.4s;
+}
+.containerS6-3:hover .overlay .price {
+  transform: translateY(0px);
+  transition-delay: 0.3s;
+  opacity: 1;
+}
+.containerS6-3:hover .overlay .cart {
+  transform: translateY(0px);
+  transition-delay: 0.6s;
+  opacity: 1;
+}
+
+.containerS6-4:hover .overlay {
+  opacity: 1;
+}
+.containerS6-4:hover .overlay .items {
+  transform: translateY(0px);
+}
+.containerS6-4:hover .overlay .head {
+  transform: translateY(0px);
+}
+.containerS6-4:hover .overlay hr {
+  width: 75px;
+  transition-delay: 0.4s;
+}
+.containerS6-4:hover .overlay .price {
+  transform: translateY(0px);
+  transition-delay: 0.3s;
+  opacity: 1;
+}
+.containerS6-4:hover .overlay .cart {
   transform: translateY(0px);
   transition-delay: 0.6s;
   opacity: 1;
@@ -23029,13 +23159,13 @@ p {
   display: flex;
   align-items: center;
   width: 100vw;
-  height: 35vh;
+  height: 50vh;
   justify-content: center;
 }
 
 .S7DivStructure {
   display: flex;
-  width: 65vw;
+  width: 40vw;
   align-items: flex-start;
 }
 
@@ -23095,6 +23225,77 @@ p {
 .divS7spacing {
   width: 40vw;
   height: 5vh;
+}
+
+.wrapperS7 {
+  /* display: flex; */
+  /* font-size: 21px; */
+  height: 70vh;
+  /* text-align: left; */
+  /* top: 80px; */
+  /* display: block; */
+  position: relative;
+}
+
+.cube-wrapper {
+  width: 250px;
+  height: 250px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  box-shadow: 10px 10px 54px -6px rgba(0, 0, 0, 0.75);
+  transform: translate(-50%, -50%);
+}
+
+.cube {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  z-index: 2;
+  transform: rotateX(360deg) rotateY(360deg);
+  transform-style: preserve-3d;
+}
+
+.cube, .cube div {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease-in-out;
+}
+
+.cube-front {
+  background: url("logo_youtube.png") #ffffff no-repeat center;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cube-top {
+  background: url("logo_large.png") #c3fff4 no-repeat center;
+  background-size: 100%;
+  transform: translate(0, -100%) rotateX(90deg);
+  transform-origin: bottom;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cube-wrapper:hover .cube {
+  transform: translate(0, 50%) rotateX(-90deg);
+}
+
+.StartUpNbr {
+  display: flex;
+  text-align: center;
+}
+
+.divS7Last {
+  width: 25vw;
+  height: 10vh;
 }
 
 .containerS8 {

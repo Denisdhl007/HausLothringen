@@ -3,13 +3,13 @@
     display: flex;
     align-items: center;
     width: 100vw;
-    height: 35vh;
+    height: 50vh;
     justify-content: center;
   }
 
   .S7DivStructure{
     display: flex;
-    width: 65vw;
+    width: 40vw;
     align-items: flex-start;
 }
 
@@ -101,3 +101,75 @@
 //         visibility:hidden;
 //     }
 // }
+
+.wrapperS7{
+    /* display: flex; */
+    /* font-size: 21px; */
+    height: 70vh;
+    /* text-align: left; */
+    /* top: 80px; */
+    /* display: block; */
+    position: relative;
+}
+
+.cube-wrapper { 
+  width: 250px;
+  height: 250px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  box-shadow: 10px 10px 54px -6px rgba(0,0,0,0.75);
+  transform: translate(-50%, -50%);
+}
+
+
+.cube{
+width: 100px;
+height: 100px;
+position: absolute;
+z-index: 2;
+transform: rotateX(360deg) rotateY(360deg);
+transform-style: preserve-3d;
+}
+
+
+.cube, .cube div {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease-in-out;
+}
+.cube-front {
+  background: url("logo_youtube.png") #ffffff no-repeat center;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cube-top {
+  background: url("logo_large.png") #c3fff4 no-repeat center;
+  background-size: 100%;
+  transform: translate(0, -100%) rotateX(90deg);
+  transform-origin: bottom;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cube-wrapper:hover .cube {
+  transform: translate(0, 50%) rotateX(-90deg);
+}
+
+.StartUpNbr{
+  display: flex;
+  text-align: center;
+}
+
+
+.divS7Last {
+  width: 25vw;
+  // border: 1px solid black;
+  height: 10vh;
+}
