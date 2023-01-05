@@ -21452,7 +21452,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   color: rgb(239, 239, 239);
-  margin-right: 10vw;
+  margin-right: 15vw;
 }
 
 .navBarLinks {
@@ -21716,17 +21716,17 @@ body {
 }
 .sun {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -62vh;
+  left: 70vw;
   right: 0;
   bottom: 0;
   margin: auto;
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background: white;
+  background: rgba(249, 244, 228, 0.7098039216);
   opacity: 0.9;
-  box-shadow: 0px 0px 40px 15px white;
+  box-shadow: 0px 0px 40px 15px #f2ecd7;
 }
 
 .ray_box {
@@ -21742,18 +21742,19 @@ body {
 }
 
 .ray {
-  background: linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-linear-gradient(top, #ffbc56 0%, rgba(255, 251, 236, 0.8) 50%, rgba(255, 255, 255, 0.3490196078) 100%);
   margin-left: 10px;
   border-radius: 80% 80% 0 0;
   position: absolute;
   opacity: 0.1;
+  transform: none;
 }
 
 .ray1 {
   position: absolute;
   height: 170px;
   width: 30px;
-  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
   top: -175px;
   left: 15px;
 }
@@ -21761,7 +21762,7 @@ body {
 .ray2 {
   height: 100px;
   width: 8px;
-  -webkit-transform: rotate(220deg);
+  transform: rotate(220deg);
   top: -90px;
   left: 75px;
 }
@@ -21769,7 +21770,7 @@ body {
 .ray3 {
   height: 170px;
   width: 50px;
-  -webkit-transform: rotate(250deg);
+  transform: rotate(250deg);
   top: -80px;
   left: 100px;
 }
@@ -21777,7 +21778,7 @@ body {
 .ray4 {
   height: 120px;
   width: 14px;
-  -webkit-transform: rotate(305deg);
+  transform: rotate(305deg);
   top: 30px;
   left: 100px;
 }
@@ -21785,7 +21786,7 @@ body {
 .ray5 {
   height: 140px;
   width: 30px;
-  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
   top: 60px;
   left: 40px;
 }
@@ -21793,7 +21794,7 @@ body {
 .ray6 {
   height: 90px;
   width: 50px;
-  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
   top: 60px;
   left: -40px;
 }
@@ -21801,7 +21802,7 @@ body {
 .ray7 {
   height: 180px;
   width: 10px;
-  -webkit-transform: rotate(70deg);
+  transform: rotate(70deg);
   top: -35px;
   left: -40px;
 }
@@ -21809,7 +21810,7 @@ body {
 .ray8 {
   height: 120px;
   width: 30px;
-  -webkit-transform: rotate(100deg);
+  transform: rotate(100deg);
   top: -45px;
   left: -90px;
 }
@@ -21817,7 +21818,7 @@ body {
 .ray9 {
   height: 80px;
   width: 10px;
-  -webkit-transform: rotate(120deg);
+  transform: rotate(120deg);
   top: -65px;
   left: -60px;
 }
@@ -21825,12 +21826,21 @@ body {
 .ray10 {
   height: 190px;
   width: 23px;
-  -webkit-transform: rotate(150deg);
+  transform: rotate(150deg);
   top: -185px;
   left: -60px;
 }
 
 @-webkit-keyframes ray_anim {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ray_anim {
   0% {
     transform: rotate(0deg);
   }
@@ -22035,7 +22045,7 @@ li {
 .S1BackGround {
   background-color: rgb(232, 229, 226);
   display: flex;
-  height: 120vh;
+  height: 90vh;
   justify-content: center;
   align-items: center;
 }
