@@ -42,7 +42,6 @@
     height: 20vh;
 }
 
-
 .containerS5{
     //width: 1000px;
     position: relative;
@@ -86,16 +85,16 @@
     color: black;
 }
 
-.containerS5 .cardS5:hover .face.face1 .content{
+.containerS5 .cardS5:hover .face.face1 .contentS5{
     opacity: 1;
     color: black;
 }
 
-.containerS5 .cardS5 .face.face1 .content img{
+.containerS5 .cardS5 .face.face1 .contentS5 img{
     max-width: 100px;
 }
 
-.containerS5 .cardS5 .face.face1 .content h3{
+.containerS5 .cardS5 .face.face1 .contentS5 h3{
     margin: 0px 0 0;
     padding: 0;
     color: #fff;
@@ -119,12 +118,12 @@
     transform: translateY(0);
 }
 
-.containerS5 .cardS5 .face.face2 .content p{
+.containerS5 .cardS5 .face.face2 .contentS5 p{
     margin: 0;
     padding: 0;
 }
 
-.containerS5 .cardS5 .face.face2 .content a{
+.containerS5 .cardS5 .face.face2 .contentS5 a{
     margin: 15px 0 0;
     display:  inline-block;
     text-decoration: none;
@@ -135,7 +134,7 @@
     font-size: 15px;
 }
 
-.containerS5 .cardS5 .face.face2 .content a:hover{
+.containerS5 .cardS5 .face.face2 .contentS5 a:hover{
     background: #333;
     color: #fff;
     transition: 0.5s;
