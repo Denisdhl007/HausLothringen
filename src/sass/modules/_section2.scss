@@ -6,13 +6,13 @@
     rgb(240,248,255),
     rgb(255, 255, 255),
     rgb(255,255,240),
-    rgba(195, 248, 255, 0.765),
+    rgba(210, 244, 248, 0.839),
     rgb(224,255,255),
-    rgb(250,240,230),
     rgba(225, 238, 255, 0.821),
+    rgb(250,240,230),
     rgb(243, 243, 243));
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    animation: gradient 15s infinite ease-in-out;
     height: 100vh;
 }
 

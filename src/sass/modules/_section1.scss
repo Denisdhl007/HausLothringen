@@ -1,26 +1,60 @@
 .S1BackGround{
-    background-color: rgb(232, 229, 226);
+    background: linear-gradient(90deg,
+    rgb(232, 229, 226),
+    rgb(243, 241, 239),
+    rgb(254, 251, 247),
+    rgb(243, 241, 239),
+    rgb(232, 229, 226),    
+    );
+    animation: animation 5s infinite ease-in-out;
+    background-size: 400% 400%;
+    
     display: flex;
-    height: 90vh;
+    height: 85vh;
     justify-content: center;
     align-items: center;
 }
 
 .S1DivTitle{
-    background-color: rgb(232, 229, 226);
+    background: linear-gradient(90deg,
+    rgb(232, 229, 226),
+    rgb(243, 241, 239),
+    rgb(254, 251, 247),
+    rgb(243, 241, 239),
+    rgb(232, 229, 226),    
+    );
+    animation: animation 5s infinite ease-in-out;
+    background-size: 400% 400%;
+
     display: flex;
     align-items: center;
     width: 100vw;
-    height: 30vh;
+    height: 25vh;
     justify-content: center;
 }
+
+@keyframes animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
 
 .S1DivStructure{
     display: flex;
     width: 65vw;
-    height: 20vh;
     flex-direction: column;
     align-items: flex-start;
+    padding-right: 5vw;
 }
 
 .S1DivStructure h4{
@@ -77,13 +111,15 @@
 .divMarqueeH3{
     display: flex;
     align-items: center;
-    width: 30vw;
+    // width: 30vw;
+    justify-content: flex-end;
+    padding-right: 1vw;
 }
 
 .S1Marquee{
     display: flex;
-    height: 8vh;
-    width: 20vw;
+    height: 10vh;
+    width: 18vw;
 }
 
 .divMarqueeMini{

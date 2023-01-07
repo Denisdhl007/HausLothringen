@@ -28,7 +28,7 @@ body{
   display: flex;
   transition: 0.5s;
   justify-content: center;
-  background-color: #000;
+  background-color: rgb(158, 158, 158);
 }
 
 .navbar {
@@ -405,16 +405,10 @@ body{
     left: -60px;
 }
 
-
 @keyframes ray_anim { 
 		0% { -webkit-transform: rotate(0deg); transform: rotate(0deg);}    
     100% { -webkit-transform: rotate(360deg); transform: rotate(360deg);}
 }
-
-
-
-
-
 
 
 
@@ -430,10 +424,15 @@ body{
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  background-color: rgb(211, 211, 211);
+  background-color: rgba(211, 211, 211, 0.83);
   opacity: 60%;
   color: rgb(0, 0, 0);
 }
+
+
+
+
+
 
 /*
 .divImage1{

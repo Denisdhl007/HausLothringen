@@ -12,6 +12,17 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  .scrollSection{
+    position: sticky;
+    display: flex;
+    top: 5px;
+    height: 5vh;
+    width: 5vw;
+    background-color: blue;
+    border-radius: 1px black solid;
+}
+
   
   .cards {
     display: grid;
