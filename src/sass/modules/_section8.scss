@@ -16,11 +16,20 @@
   .scrollSection{
     position: sticky;
     display: flex;
-    top: 5px;
-    height: 5vh;
-    width: 5vw;
-    background-color: blue;
-    border-radius: 1px black solid;
+    
+    top: 20vh;
+    bottom: 20px;
+
+    width: 8vw;
+    margin-left: 89vw;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.scrollSection button{
+  border-radius: 40px black solid;
+  background-color: rgb(152, 233, 255);
+  text-align: center;
 }
 
   
