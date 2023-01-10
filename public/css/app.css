@@ -22149,7 +22149,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding-right: 1vw;
+  padding-right: 3vw;
 }
 
 .S1Marquee {
@@ -22942,7 +22942,7 @@ p {
 
 .S5DivContainer {
   background-color: rgba(222, 244, 255, 0.6588235294);
-  min-height: 60vh;
+  min-height: 75vh;
   margin: 0;
   font-size: 20px;
   -ms-scroll-snap-type: y mandatory;
@@ -23119,7 +23119,7 @@ p {
   background-color: rgb(232, 229, 226);
   justify-content: center;
   width: 100vw;
-  height: 80vh;
+  height: 60vh;
 }
 
 .containerS6-1 {
@@ -23491,6 +23491,7 @@ p {
   flex-grow: 1;
   max-width: 960px;
   margin-top: 4vh;
+  margin-bottom: 4vh;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
