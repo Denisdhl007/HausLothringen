@@ -67,7 +67,9 @@ function classToggle() {
     var el = document.querySelector('.icon-cards__content');
     el.classList.toggle('step-animation');
   }
-  document.querySelector('#toggle-animation').addEventListener('click', classToggle);
+
+
+  // document.querySelector('toggle-animation').addEventListener('click', classToggle);
 
 
 
@@ -150,6 +152,9 @@ function classToggle() {
 
   // SECTION 8
 
+/*
+
+
   filterSelection("all") // Execute the function and show all columns
   function filterSelection(c) {
     var x, i;
@@ -198,9 +203,71 @@ function classToggle() {
     });
   }
 
+*/
+
+
+
+
 
 
   // SECTION 9
+
+let ctx = document.getElementById('myChart');
+
+let stars = [135850, 52122, 148825, 16939, 9763];
+let frameworks = ['React', 'Angular', 'Vue', 'Hyperapp', 'Omi'];
+
+let myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: frameworks,
+            datasets: [{
+                label: 'Github Stars',
+                data: stars
+            }]
+        }
+});
+
+
+
+
+    /*
+
+  const config = {
+    type: 'doughnut',
+    data: data,
+  };
+
+  const data = {
+    labels: [
+      'Red',
+      'Blue',
+      'Yellow'
+    ],
+    datasets: [{
+      label: 'My First Dataset',
+      data: [300, 50, 100],
+      backgroundColor: [
+        'rgb(255, 99, 132)',
+        'rgb(54, 162, 235)',
+        'rgb(255, 205, 86)'
+      ],
+      hoverOffset: 4
+    }]
+  };
+
+*/
+
+
+
+
+
+
+
+
+
+
+/*
 
   // TEST
 
@@ -254,7 +321,7 @@ anychart.onDocumentReady(function() {
 });
 
 
-
+*/
 
 
 //   // <block:setup:1>

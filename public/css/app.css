@@ -23456,7 +23456,7 @@ p {
 }
 
 .cube-front {
-  background: url("logo_youtube.png") #ffffff no-repeat center;
+  background-color: #ffffff;
   background-size: 100%;
   display: flex;
   align-items: center;
@@ -23464,7 +23464,7 @@ p {
 }
 
 .cube-top {
-  background: url("logo_large.png") hsl(206deg, 100%, 88%) no-repeat center;
+  background-color: hsl(206deg, 100%, 88%);
   background-size: 100%;
   transform: translate(0, -100%) rotateX(90deg);
   transform-origin: bottom;
