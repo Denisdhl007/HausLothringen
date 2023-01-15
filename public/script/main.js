@@ -216,106 +216,11 @@ function classToggle() {
 
   // SECTION 9
 
-
   document.getElementById("scroll-buttonToSection7").addEventListener("click", function() {
     document.getElementById("toSection_7").scrollIntoView({
       behavior: "smooth"
     });
   });
-
-
-
-
-let ctx = document.getElementById('myChart').getContext('2d');
-let myChart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-        datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        }
-    }
-});
-
-
-
-
-// let ctx = document.getElementById('myChart');
-
-// let stars = [135850, 52122, 148825, 16939, 9763];
-// let frameworks = ['React', 'Angular', 'Vue', 'Hyperapp', 'Omi'];
-
-// let myChart = new Chart(ctx, {
-//         type: 'bar',
-//         data: {
-//             labels: frameworks,
-//             datasets: [{
-//                 label: 'Github Stars',
-//                 data: stars
-//             }]
-//         }
-// });
-
-
-
-
-    /*
-
-  const config = {
-    type: 'doughnut',
-    data: data,
-  };
-
-  const data = {
-    labels: [
-      'Red',
-      'Blue',
-      'Yellow'
-    ],
-    datasets: [{
-      label: 'My First Dataset',
-      data: [300, 50, 100],
-      backgroundColor: [
-        'rgb(255, 99, 132)',
-        'rgb(54, 162, 235)',
-        'rgb(255, 205, 86)'
-      ],
-      hoverOffset: 4
-    }]
-  };
-
-*/
-
-
-
-
-
-
 
 
 
@@ -373,41 +278,4 @@ anychart.onDocumentReady(function() {
 
 });
 
-
 */
-
-
-//   // <block:setup:1>
-// const data = {
-//   labels: [
-//     'Red',
-//     'Blue',
-//     'Yellow'
-//   ],
-//   datasets: [{
-//     label: 'My First Dataset',
-//     data: [300, 50, 100],
-//     backgroundColor: [
-//       'rgb(255, 99, 132)',
-//       'rgb(54, 162, 235)',
-//       'rgb(255, 205, 86)'
-//     ],
-//     hoverOffset: 4
-//   }]
-// };
-// // </block:setup>
-
-// // <block:config:0>
-// const config = {
-//   type: 'doughnut',
-//   data: data,
-// };
-// // </block:config>
-
-// module.exports = {
-//   actions: [],
-//   config: config,
-// };
-
-
-

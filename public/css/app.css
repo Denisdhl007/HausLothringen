@@ -23683,7 +23683,6 @@ h2 a:hover, .h2 a:hover {
 }
 
 .S9DivContainer {
-  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23692,7 +23691,8 @@ h2 a:hover, .h2 a:hover {
 .chart {
   display: table;
   table-layout: fixed;
-  width: 90vw;
+  width: 95vw;
+  font-size: 15px;
   /* max-width: 700px; */
   height: 400px;
   margin: 0 auto;
@@ -23707,11 +23707,11 @@ h2 a:hover, .h2 a:hover {
   height: 200px;
 }
 .chart span {
-  margin: 0 1em;
+  margin: 10px;
   display: block;
   background: rgba(209, 236, 250, 0.75);
-  -webkit-animation: draw 1s ease-in-out;
-          animation: draw 1s ease-in-out;
+  -webkit-animation: draw 2s ease-in-out;
+          animation: draw 2s ease-in-out;
 }
 .chart span:before {
   position: absolute;
@@ -23736,6 +23736,21 @@ h2 a:hover, .h2 a:hover {
     height: 0;
   }
 }
+.othersChart {
+  display: flex;
+  margin-top: 15vh;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.othersChart1 {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
 .S10DivContainer {
   height: 80vh;
   display: flex;

@@ -1,3 +1,20 @@
+
+// .divS9{
+//   height: 80vh;
+//   width: 80vw;
+//   border: solid 1px black;
+// }
+
+// https://codepen.io/dazld/pen/npydRK
+
+  // .canvas1{
+  //   border: 1px solid black;
+  //   display: flex;
+  //   width: 80vh;
+  //   height: 30vw;
+  // }
+
+
 .s9Btn{
     border-radius: 10px;
     border: 1PX solid black;
@@ -14,29 +31,16 @@
   }
 
 .S9DivContainer{
-  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-// https://codepen.io/dazld/pen/npydRK
-
-  // .canvas1{
-  //   border: 1px solid black;
-  //   display: flex;
-  //   width: 80vh;
-  //   height: 30vw;
-  // }
-
-
-
-
-
 .chart{
   display: table;
   table-layout: fixed;
-  width: 90vw;
+  width: 95vw;
+  font-size: 15px;
   /* max-width: 700px; */
   height: 400px;
   margin: 0 auto;
@@ -52,10 +56,10 @@
   }
   
   span{
-    margin:0 1em;
+    margin:10px;
     display: block;
     background: rgba(#d1ecfa, .75);
-    animation: draw 1s ease-in-out;
+    animation: draw 2s ease-in-out;
     
     &:before{
       position:absolute;
@@ -66,11 +70,26 @@
       content:attr(title);
       word-wrap: break-word;
     }
-    
   }
-  
 }
 
 @keyframes draw{
   0%{height:0;} 
+}
+
+.othersChart{
+  display: flex;
+  margin-top: 15vh;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.othersChart1{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+
 }
