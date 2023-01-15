@@ -22,7 +22,7 @@
             <div class="divImage"> <!-- navBar -->
                 <div class="navbar">
                     <div class="navBarLeft">
-                        <a class="navLinksLogo" href="#about">Haus Lothringen</a>
+                        <a class="navLinksLogo" href="#ToWhatWeDo">Haus Lothringen</a>
                     </div>
 
                     <div class="navBarCenter">
@@ -41,11 +41,11 @@
 
                     <div class="navBarEnd">
                         <div class="navBarLogoEnd">
-                            <i class="navBarPhoneShake fa-solid fa-link"></i>
+                          <a i class="navBarPhoneShake fa-solid fa-link" href="https://www.linkedin.com/company/haus-lothringen-capital-investments"target="_blank"></i></a>
                         </div>
                         <div class="textPhone">
                             <div class="callUs">
-                                <a class="navLinksEnd" href="#">link to us</a>
+                                <a class="navLinksEnd" href="https://www.linkedin.com/company/haus-lothringen-capital-investments"target="_blank">link to us</a>
                             </div>
                         </div>
                     </div>
@@ -175,7 +175,7 @@
           <i class=" S4fontawesome  fa-solid fa-arrows-turn-to-dots"></i>
       </div>
       <div class="S1DivStructure">
-        <h4> What we do</h4>
+        <h4 id="ToWhatWeDo"> What we do</h4>
         <h5>Haus Lothringen bootstraps Start-ups at different fundraising stages from <b>Seed</b>  to <b>Pre-IPO</b> with funding possibilities</h5>
       </div>
   </div>
@@ -430,7 +430,7 @@
                 <div class="face face2">
                     <div class="contentS5">
                         <p>Get in touch & share your Slide Deck</p>
-                        <a href="https://www.linkedin.com/company/haus-lothringen-capital-investments">Contact Us</a>
+                          <a href="https://www.linkedin.com/company/haus-lothringen-capital-investments" target="_blank">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -444,7 +444,7 @@
                 <div class="face face2">
                     <div class="contentS5">
                         <p>Answer some questions related to your needs</p>
-                            <a href="https://www.linkedin.com/company/haus-lothringen-capital-investments">Contact Us</a>
+                          <a href="https://www.linkedin.com/company/haus-lothringen-capital-investments" target="_blank">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -458,7 +458,7 @@
                 <div class="face face2">
                     <div class="contentS5">
                         <p>We do our best to connect your business with funds</p>
-                            <a href="https://www.linkedin.com/company/haus-lothringen-capital-investments">Contact Us</a>
+                            <a href="https://www.linkedin.com/company/haus-lothringen-capital-investments" target="_blank">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -472,7 +472,7 @@
                 <div class="face face2">
                     <div class="contentS5">
                         <p>We keep you in the loop</p>
-                            <a href="https://www.linkedin.com/company/haus-lothringen-capital-investments">Contact Us</a>
+                            <a href="https://www.linkedin.com/company/haus-lothringen-capital-investments" target="_blank">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -561,7 +561,7 @@
 
 
 <section7>
-    <div class="S7DivTitle" id="toSection-7bis">
+    <div class="S7DivTitle">
         <div class="box">
             <i class=" S4fontawesome fa-solid fa-money-bill-trend-up"></i>
         </div>
@@ -570,14 +570,7 @@
                 <h4 id="toSection_7"> Investments</h4>
                 <h5>start-ups in portfolio</h5>
                 <button class="s7Btn" id="scroll-buttonToSection9"><a href="#toSection_9">Jump directly to our portfolio allocation</a></button>
-                
             </div>
-          <!-- 
-            <div class="divHoverCountdown">
-                <div class="divS7"></div>
-            </div>
-            <div class="divS7spacing"></div> 
-          -->
         </div>
 
         <div class="wrapperS7">
@@ -766,9 +759,10 @@ END PORTFOLIO SELECTOR
 
 <section8>
     <div class="S8DivContainer">
+
       <div class="scrollSection"> 
-        <button> <a href="#toSection-7bis"></a> Previous</button> 
-        <button> <a href="#toSection-9bis"></a>  Next</button>
+        <button class="s8BtnBack" > <a href="#toSection_7">Back</a></button> 
+        <button class="s8BtnSkip"> <a href="#toSection_9">Skip</a> </button>
       </div>
 
       
@@ -818,8 +812,7 @@ END PORTFOLIO SELECTOR
                 </div>
               </li>
             </ul>
-          </div>     
-
+          </div>    
           <!-- 2 -->
         
           <div class="containerS8">
@@ -2811,42 +2804,156 @@ END PORTFOLIO SELECTOR
               </li>
             </ul>
           </div>      -->
-
+        </div>
 </div>
 </section8>
 
 <section9-Intro>
-    <div class="S6DivTitle" id="toSection-9bis">
+    <div class="S6DivTitle">
         <div class="box">
             <i class=" S4fontawesome fa-solid fa-book-atlas"></i>
         </div>
         <div class="S6DivStructure">          
             <h4 id="toSection_9"> Allocation </h4>
-            <h5>Here is current Haus Lothringen Potfolio allocation</h5>
-            <button><a href="#toSection_7">Back to Start-Ups details </a></button>
+            <h5>Here is current Haus Lothringen Potfolio allocation by country and by sectors expressed in committed funds</h5>
+            <button class="s9Btn" id="scroll-buttonToSection7"><a href="#toSection_7">Back to Start-Ups details </a></button>
 
         </div>
     </div>
 </section9-Intro>
 
-
 <section9>
     <div class="S9DivContainer">
-        <div>
-            <h4> Allocation by country (inner circle) / Funds committed (outer circle)</h4>
+      <ul class="chart">
+        <li>
+          <span style="height:5%" title="ActionScript"></span>
+        </li>
+        <li>
+          <span style="height:70%" title="JavaScript"></span>
+        </li>
+        <li>
+          <span style="height:50%" title="CoffeScript"></span>
+        </li>
+        <li>
+          <span style="height:15%" title="HTML"></span>
+        </li>
+        <li>
+          <span style="height:15%" title="HTML"></span>
+        </li>
+        <li>
+          <span style="height:15%" title="HTML"></span>
+        </li>
+        <li>
+          <span style="height:15%" title="HTML"></span>
+        </li>
+        <li>
+          <span style="height:15%" title="HTML"></span>
+        </li>
+      </ul>            
+    </div>
+
+</section9>
+
+<section10>
+  <div class="S10DivContainer">
+    <ul class="chart">
+      <li>
+        <span style="height:5%" title="ActionScript"></span>
+      </li>
+      <li>
+        <span style="height:70%" title="JavaScript"></span>
+      </li>
+      <li>
+        <span style="height:50%" title="CoffeScript"></span>
+      </li>
+      <li>
+        <span style="height:15%" title="HTML"></span>
+      </li>
+      <li>
+        <span style="height:15%" title="HTML"></span>
+      </li>
+      <li>
+        <span style="height:15%" title="HTML"></span>
+      </li>
+      <li>
+        <span style="height:15%" title="HTML"></span>
+      </li>
+      <li>
+        <span style="height:15%" title="HTML"></span>
+      </li>
+    </ul>            
+  </div>
+</section10>
+
+
+<footer>
+    <div class="footerContainer">
+        <div class="footerTextStructure">
+            <h3>About Us</h3>
+            <p>Haus Lothringen bootstraps Start-ups at different fundraising stages from Seed to Pre-IPO with funding possibilities.</p>
         </div>
 
+        <div class="footerTextStructure">
+            <h3>Follow Us</h3>
+            <ul class="social-icons">
+                <li><a href="https://www.linkedin.com/company/haus-lothringen-capital-investments"target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
 
-        <canvas id="myChart" style="width:800; height: 600;"></canvas>
 
-        <div id="containerS9"></div>
+<section11>
+  <div class="S11DivContainer">
+      <p>Haus Lothringen</p>
+  </div>
+</section11>
+
+<script src="./public/script/main.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="./node_modules/chart.js/"></script>
+<script src="./node_modules/Chart.js-master/"></script>
+
+
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+<script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-core.min.js"></script>
+<script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-pie.min.js"></script>
+<script src="https://cdn.anychart.com/js/8.0.1/anychart-core.min.js"></script>
+<script src="https://cdn.anychart.com/js/8.0.1/anychart-pie.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script> -->
+
+</body>
+</html>
+
+
+
+
+
+
+<!-- 
+
+// https://codepen.io/dazld/pen/npydRK -->
+
+        <!-- <div class="canvas1">
+          <canvas id="myChart"></canvas>
+        </div> -->
+
+<!-- 
+        https://www.chartjs.org/docs/master/developers/contributing.html#building-and-testing -->
+
+<!-- 
+        <div id="containerS9"></div> -->
 
 <!-- 
         https://webdesign.tutsplus.com/tutorials/how-to-build-a-css-only-semi-circle-donut-chart--cms-26997
 
-
         https://www.chartjs.org/docs/latest/charts/doughnut.html
-
 
         https://www.chartjs.org/docs/latest/charts/doughnut.html
 
@@ -2856,109 +2963,7 @@ END PORTFOLIO SELECTOR
 
         https://www.w3schools.com/js/tryit.asp?filename=tryai_chartjs_doughnut 
       
-      
       -->
-
-
-        
-    </div>
-</section9>
-
-<section10>
-    <div class="S10DivContainer">
-        <div>
-            <h4> Allocation by country (inner circle) / Funds committed (outer circle)</h4>
-        </div>
-    </div>
-</section10>
-
-
-
-<section11>
-    <div class="S11DivContainer">
-        <p>Haus Lothringen</p>
-    </div>
-</section11>
-
-
-
-
-<!-- 
-<footer>
-    <section>
-        <h1>Classy Footer</h1>
-        <h3>Hover over the circle below</h3>
-      </section>
-      <div class="footer">
-        <div id="button"></div>
-      <div id="container">
-      <div id="cont">
-      <div class="footer_center">
-             <h3>Classy footer text</h3>
-      </div>
-      </div>
-      </div>
-      </div>
-
-</footer> -->
-
-
-<footer>
-    <div class="container">
-
-        <div class="row">
-            <div class="col-md-4">
-                <h3>About Us</h3>
-                <p>Haus Lothringen bootstraps Start-ups at different fundraising stages from Seed to Pre-IPO with funding possibilities.</p>
-            </div>
-
-
-            <div class="col-md-4">
-                <h3>Contact</h3>
-                <ul>
-                    <li>Phone: 555-555-5555</li>
-                    <li>Email: info@example.com</li>
-                </ul>
-            </div>
-
-
-            <div class="col-md-4">
-                <h3>Follow Us</h3>
-                <ul class="social-icons">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                </ul>
-            </div>
-
-
-        </div>
-    </div>
-</footer>
-
-<script src="./public/script/main.js"></script>
-
-<!-- <script src="./node_modules/chart.js/"></script> -->
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-
-
-<script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-core.min.js"></script>
-<script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-pie.min.js"></script>
-
-<script src="https://cdn.anychart.com/js/8.0.1/anychart-core.min.js"></script>
-<script src="https://cdn.anychart.com/js/8.0.1/anychart-pie.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-
-</body>
-</html>
-
 
 
 
