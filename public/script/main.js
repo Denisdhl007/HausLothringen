@@ -139,7 +139,11 @@ function classToggle() {
 
 
 
-
+  document.getElementById("scroll-buttonToSection9").addEventListener("click", function() {
+    document.getElementById("toSection_9").scrollIntoView({
+      behavior: "smooth"
+    });
+  });
 
 
 
@@ -212,21 +216,24 @@ function classToggle() {
 
   // SECTION 9
 
-let ctx = document.getElementById('myChart');
 
-let stars = [135850, 52122, 148825, 16939, 9763];
-let frameworks = ['React', 'Angular', 'Vue', 'Hyperapp', 'Omi'];
 
-let myChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: frameworks,
-            datasets: [{
-                label: 'Github Stars',
-                data: stars
-            }]
-        }
-});
+
+// let ctx = document.getElementById('myChart');
+
+// let stars = [135850, 52122, 148825, 16939, 9763];
+// let frameworks = ['React', 'Angular', 'Vue', 'Hyperapp', 'Omi'];
+
+// let myChart = new Chart(ctx, {
+//         type: 'bar',
+//         data: {
+//             labels: frameworks,
+//             datasets: [{
+//                 label: 'Github Stars',
+//                 data: stars
+//             }]
+//         }
+// });
 
 
 
