@@ -30,9 +30,9 @@ footer {
 }
 
 .footerTextStructure ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+    list-style: none;
+	margin:0px;
+	padding: 0px;
 }
 
 .footerTextStructure li {
@@ -41,13 +41,21 @@ footer {
 
 .social-icons li {
 	display: inline-block;
-	margin-right: 10px;
+	margin: 5px
 }
 
-.social-icons li a {
-	color: #fff;
-	font-size: 40px;
+.social-icons li i {
+	color: rgb(255, 255, 255);
+	font-size: 25px;
 }
+
+
+.social-icons li i:hover {
+	color: #b5f9ff;
+	font-size: 35px;
+	transition: 0.5s ease;
+}
+
 
 @media (max-width: 991px) {
 	.col-md-4 {
