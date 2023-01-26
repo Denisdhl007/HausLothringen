@@ -6,6 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/css/app.css">
     <link rel="icon" type="image/x-icon" href="./public/img/favicon/Haus Lothringen-1.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!--     
+    <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-pie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.0/chart.min.js" integrity="sha512-qKyIokLnyh6oSnWsc5h21uwMAQtljqMZZT17CIMXuCQNIfFSFF4tJdMOaJHL9fQdJUANid6OB6DRR0zdHrbWAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.0/chart.js" integrity="sha512-dMZihiwDKQBWhUkLvTvGzbOGLoNdFzZhdYRCFOsIbsDQkyakukI3vjB6SpR0iUTwUK7delljKsqfFF50ZWAgwA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.0/chart.umd.js" integrity="sha512-B51MzT4ksAo6Y0TcUpmvZnchoPYfIcHadIaFqV5OR5JAh6dneYAeYT1xIlaNHhhFAALd5FLDTWNt/fkxhwE/oQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.0/chart.umd.min.js" integrity="sha512-0gS26t/01v98xlf2QF4QS1k32/YHWfFs8HfBM/j7gS97Tr8WxpJqoiDND8r1HgFwGGYRs0aRt33EY8xE91ZgJw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.0/helpers.js" integrity="sha512-vIxnRNglJBGfc2pje+iMmSKeU7kNcYUD0OkrlPyPt2R8SgWoWnkUpsGdBIZ2jktUDhDoi3/AlH/QKTi1f75RmQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.0/helpers.min.js" integrity="sha512-JG3S/EICkp8Lx9YhtIpzAVJ55WGnxT3T6bfiXYbjPRUoN9yu+ZM+wVLDsI/L2BWRiKjw/67d+/APw/CDn+Lm0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./node_modules/chart.js/"></script>
+    <script src="./node_modules/Chart.js-master/"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-pie.min.js"></script>
+    <script src="https://cdn.anychart.com/js/8.0.1/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/js/8.0.1/anychart-pie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>  -->
     <title>Haus Lothringen Capital & Investments</title>
 </head>
 <body>
@@ -63,7 +85,7 @@
                   <div class="ray ray10"></div>
               </div>
           </div>
-          
+
             <div class="divImages2head">
                 <h1 class="divImageH1"> 
                     <span>Haus Lothringen</span>
@@ -79,14 +101,6 @@
         </div> 
     </nav>
 
-
-    <!-- 
-    https://codepen.io/alvaromontoro/pen/GRNmdzB
-
-    SUN RAY EFFECT
-    https://codepen.io/mgkOV/pen/qzNegg
-
-    -->
 </header>
 
 <!-- 2 -->
@@ -2866,6 +2880,41 @@ END PORTFOLIO SELECTOR
 </section>
 
 
+<!-- TEST POUR CHARTS SECTION 10 -->
+
+
+
+<section>
+
+  <div>
+    <canvas id="myChart"></canvas>
+  </div>
+  
+
+
+
+  
+
+  <div class="containerDivChart">
+    <div id="containerChart"></div>
+  </div>
+
+
+
+<!-- test 2 -->
+<!-- 
+<div class="donutAllocation">
+  <div class="donut instalment2">
+    <div class="donut-default"></div>
+    <div class="donut-line"></div>
+    <div class="donut-text"></div>
+    <div class="donut-case"></div>
+  </div>
+</div> -->
+
+</section>
+
+
 <!-- 10 -->
 <section class="section10">
   <div class="S10DivContainer">
@@ -2913,29 +2962,6 @@ END PORTFOLIO SELECTOR
     <p>Aerospace, Insurance, Entertainment</p>
   </div>
 
-
-
-  <!-- Test 1 -->
-<!-- 
-
-  <div class="containerDivChart">
-    <div id="containerChart"></div>
-  </div> -->
-
-
-<!-- test 2 -->
-<!-- 
-<div class="donutAllocation">
-  <div class="donut instalment2">
-    <div class="donut-default"></div>
-    <div class="donut-line"></div>
-    <div class="donut-text"></div>
-    <div class="donut-case"></div>
-  </div>
-</div> -->
-
-
-
 </section>
 
 
@@ -2965,31 +2991,6 @@ END PORTFOLIO SELECTOR
 </section>
 
 <script src="./public/script/main.js"></script>
-
-<script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-core.min.js"></script>
-<script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-pie.min.js"></script>
-
-
-
-<!-- 
   
-  
-  
-<script src="./node_modules/chart.js/"></script>
-
-<script src="./node_modules/Chart.js-master/"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-<script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-core.min.js"></script>
-<script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-pie.min.js"></script>
-<script src="https://cdn.anychart.com/js/8.0.1/anychart-core.min.js"></script>
-<script src="https://cdn.anychart.com/js/8.0.1/anychart-pie.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script> -->
-
 </body>
 </html>

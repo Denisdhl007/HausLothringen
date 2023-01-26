@@ -24010,6 +24010,20 @@ h2 a:hover, .h2 a:hover {
   align-items: center;
 }
 
+.containerDivChart {
+  display: flex;
+  justify-content: center;
+}
+
+#containerChart {
+  display: flex;
+  width: 80vw;
+  height: 80vh;
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgb(0, 0, 0);
+}
+
 .S11DivContainer {
   background-color: #000000;
   display: flex;
