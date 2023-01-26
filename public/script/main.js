@@ -137,27 +137,15 @@ function classToggle() {
 
   // SECTION 7
 
-
-
-  document.getElementById("scroll-buttonToSection9").addEventListener("click", function() {
-    document.getElementById("toSection_9").scrollIntoView({
+  document.getElementById("scrollButtonToSection9").addEventListener("click", function() {
+    document.getElementById("toSection9").scrollIntoView({
       behavior: "smooth"
     });
   });
 
-
-
-
-
-
-
-
-
-
   // SECTION 8
 
 /*
-
 
   filterSelection("all") // Execute the function and show all columns
   function filterSelection(c) {
@@ -210,14 +198,10 @@ function classToggle() {
 */
 
 
-
-
-
-
   // SECTION 9
 
-  document.getElementById("scroll-buttonToSection7").addEventListener("click", function() {
-    document.getElementById("toSection_7").scrollIntoView({
+  document.getElementById("scrollButtonToSection7").addEventListener("click", function() {
+    document.getElementById("toSection7").scrollIntoView({
       behavior: "smooth"
     });
   });

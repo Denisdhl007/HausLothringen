@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./public/css/app.css">
         <link rel="icon" type="image/x-icon" href="./public/img/favicon/Haus Lothringen-1.png">
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
         <title>Haus Lothringen Capital & Investments - Team</title>
     </head>
 <body>
@@ -16,25 +19,22 @@
 
 <header>
     <nav>
-        <div class="containerimage">
-            <div class="divImage"> <!-- navBar -->
+        <div class="containerimageTeam">
+            <div class="divImageTeam">
+                <!-- navBar -->
                 <div class="navbar">
                     <div class="navBarLeft">
-                        <a class="navLinksLogo" href="#ToWhatWeDo">Haus Lothringen</a>
+                        <a class="navLinksLogo" href="./index.html">Haus Lothringen</a>
                     </div>
 
                     <div class="navBarCenter">
                         <div class="navBarLinks">
-                            <a class="navLinks glow" href="#">Home</a>
+                            <a class="navLinks glow" href="./index.html">Home</a>
                         </div>
 
                         <div class="navBarLinks">
-                            <a class="navLinks" href="#">Team</a>
+                            <a class="navLinks glow" href="./team.html">Team</a>
                         </div>
-
-                        <!-- <div class="navBarLinks">
-                            <a class="navLinks" href="#">Disclaimer</a>
-                        </div> -->
                     </div>
 
                     <div class="navBarEnd">
@@ -49,82 +49,64 @@
                     </div>
                 </div>
             </div>
+        </div> 
+    </nav>
+</header>
 
 
-            <div class="sun">
-                <div class="ray_box">
-                    <div class="ray ray1"></div>
-                    <div class="ray ray2"></div>
-                    <div class="ray ray3"></div>
-                    <div class="ray ray4"></div>
-                    <div class="ray ray5"></div>
-                    <div class="ray ray6"></div>
-                    <div class="ray ray7"></div>
-                    <div class="ray ray8"></div>
-                    <div class="ray ray9"></div>
-                    <div class="ray ray10"></div>
-                </div>
-            </div>
-  
-  
-  
-  
-              <div class="divImages2head">
-                  <h1 class="divImageH1"> 
-                      <span>Haus Lothringen</span>
-                  </h1>
-                  <h2 class="divImageH2">
-                      <span>Capital & Investments</span>
-                  </h2>
-              </div>
-  
-              <div class="divTextFlow">
-                  <marquee>Based in Victoria - Brussels - Luxembourg - Amsterdam - Zürich - Geneva - Paris - Berlin - Munich - Vienna - London - Dublin - Copenhagen - Stockholm - Helsinki - Oslo - Madrid - Barcelona - Lisbon - Milan - New York - San Francisco - Toronto - Singapore - Dubai - Johannesburg - Nairobi - Abuja - Sao Paulo</marquee>
-              </div>
-          </div> 
-      </nav>
-  
+  <section class="teamS1">
+    <div class="operationTitre">
+        Where we operate
+    </div>
 
+    <div class="container">
+        <div class="map-container">
+          <img src="http://res.cloudinary.com/slzr/image/upload/v1500321012/world-map-1500_vvekl5.png">
+          <div class="point venezuela tippy" title="Venezuela">Venezuela</div>
+          <div class="point brasil tippy" title="Brasil"></div>
+          <div class="point argentina tippy" title="Argentina"></div>
+          <div class="point colombia tippy" title="Colombia"></div>
+          <div class="point panama tippy" title="Panamá"></div>
+          <div class="point mexico tippy" title="Mexico"></div>
+          <div class="point usa tippy" title="Estados Unidos"></div>
+          <div class="point arabia tippy" title="Arabia Saudi"></div>
+          <div class="point turquia tippy" title="Turquía"></div>     
+          <div class="point rusia tippy" title="Rusia"></div>
+          <div class="point china tippy" title="China"></div>
+          <div class="point japon tippy" title="Japon"></div>
+          <div class="point australia tippy" title="Australia"></div>
+        </div>
+      </div>
 
-  <section1Team>
-
-    We we operate
-
-    https://codepen.io/salazarr-js/pen/eRoaLx
-
-
-  </section1Team>
+<!-- https://codepen.io/salazarr-js/pen/eRoaLx -->
+</section>
 
 
 
 
 
-  <section2Team>
+  <section class="teamS2">
 
     our Team
-    https://codepen.io/marlenesco/pen/NqOozj
+    <!-- https://codepen.io/marlenesco/pen/NqOozj -->
 
 
 
 
-  </section2Team>
+  </section>
 
 
 
 
-<section3Team>
-
-
-
-
+<section class="teamS3">
 
     Our history
 
-    https://codepen.io/htmlcodex/pen/KKVpdNK
+    <!-- https://codepen.io/htmlcodex/pen/KKVpdNK -->
 
 
 
-</section3Team>
+</section>
 
 
 
@@ -149,19 +131,39 @@
 
 
 
-<section11>
+<section class="lastFooter">
     <div class="S11DivContainer">
         <p>Haus Lothringen</p>
     </div>
-  </section11>
+  </section>
   
   <script src="./public/script/main.js"></script>
+  <script src="./public/script/team.js"></script>
   
   <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-core.min.js"></script>
   <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-pie.min.js"></script>
   
+
+  <!-- Development -->
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+
+<!-- Production -->
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+
 </body>
 </html>
 
 <!-- 
 https://codepen.io/fredericrous/pen/xxVXJYX -->
+
+
+
+<!-- 
+
+https://codepen.io/maxym11/pen/dyGEzay -->
+<!-- 
+https://codepen.io/fredericrous/pen/xxVXJYX -->
+
+https://codepen.io/marlenesco/pen/NqOozj

@@ -1,0 +1,179 @@
+.S1BackGround{
+    // background: linear-gradient(321deg, rgba(223,247,255,1) 9%, rgba(54,216,238,0.44303658963585435) 27%, rgba(51,228,255,0.5046612394957983) 46%, rgba(38,224,255,0.4906556372549019) 60%, rgba(0,197,232,0.35900297619047616) 74%, rgba(0,212,255,1) 100%);
+    background-color: white;
+    animation: animation 5s infinite ease-in-out;
+    background-size: 400% 400%;
+    display: flex;
+    height: 85vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.S1DivTitle{
+    background-color: white;
+    animation: animation 5s infinite ease-in-out;
+    background-size: 400% 400%;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 25vh;
+    justify-content: center;
+}
+
+@keyframes animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.S1DivStructure{
+    display: flex;
+    width: 65vw;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 5vw;
+}
+
+.S1DivStructure h4{
+    font-size: 45px;
+}
+
+.S1DivStructure h5{
+    font-size: 25px;
+}
+
+.divContainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    //align-items: center;
+    //text-align: center;
+    width: 60vw;
+    margin-left: 10vw;
+}
+
+.divHeadH3{
+    display: flex;
+    height: 23vh;
+}
+
+.divHeadSecondH3{
+    display: flex;
+    height: 20vh;
+}
+
+.divHeadSecondH3 h3{
+    display: flex;
+    align-items: center;
+}
+
+.spacerDivision{
+    display: flex;
+    border: 1px solid rgba(110, 110, 110, 0.697);
+    width: 60vw;
+}
+
+.divTextFlow2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.divMarquee{
+    display: flex;
+    height: 20vh;
+}
+
+.divMarqueeH3{
+    display: flex;
+    align-items: center;
+    // width: 30vw;
+    justify-content: flex-end;
+    padding-right: 3vw;
+}
+
+.S1Marquee{
+    display: flex;
+    height: 10vh;
+    width: 18vw;
+}
+
+.divMarqueeMini{
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    align-content: center;
+}
+
+
+
+
+// html, body {
+//     height: 100%;
+//   }
+//   body {
+//     background-color: #f0f0f0;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//   }
+  
+  
+  $primary: #00acc1;
+  
+  .map-container {
+    padding: 3.2rem .8rem;
+    position: relative;
+    display: inline-block;
+    img {
+      width: 100%;
+    }
+    .point {
+      cursor: pointer;
+      position: absolute;
+      width: 1.6rem;
+      height: 1.6rem;
+      background-color:  $primary;
+      border-radius: 50%;
+      transition: all .3s ease;
+      will-change: transform, box-shadow;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 0 rgba($primary, 0.4);
+      animation: pulse 3s infinite;
+      &:hover {
+        animation: none;
+        transform:  translate(-50%, -50%) scale3D(1.35, 1.35 ,1);
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+      }
+    }
+    .venezuela { top: 54%; left: 24%; }
+    .brasil { top: 64%; left: 28%; }
+    .argentina { top: 77%; left: 27%; }
+    .colombia { top: 55%; left: 21%; }
+    .panama { top: 51%; left: 18%; }
+    .mexico { top: 38%; left: 12%; }
+    .usa { top: 26%; left: 17%; }
+    .arabia { top: 40%; left: 53%; }
+    .turquia { top: 31%; left: 57%; }
+    .rusia { top: 16%; left: 67%; }
+    .china { top: 40%; left: 72%; }
+    .japon { top: 34%; left: 86%; }
+    .australia { top: 72%; left: 86%; }
+  }
+  
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba($primary, 0.5); }
+    70% { box-shadow: 0 0 0 25px rgba($primary, 0); }
+    100% { box-shadow: 0 0 0 0 rgba($primary, 0); }
+  }
+  
