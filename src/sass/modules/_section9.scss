@@ -1,3 +1,40 @@
+// INTRO
+
+.section9Intro{
+  display: flex;
+  width: 100vw;
+  height: 33vh;
+  justify-content: center;
+}
+
+.section9DivTitleHeader{
+  display: flex;
+  -webkit-animation: animation 5s infinite ease-in-out;
+  animation: animation 5s infinite ease-in-out;
+  background-size: 400% 400%;
+  display: flex;
+  align-items: center;
+  width: 70vw;
+  justify-content: flex-start;
+}
+
+.section9DivStructureHeader{
+  display: flex;
+  width: 50vw;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.section9DivStructureHeader h4{
+  font-size: 45px;
+}
+
+.section9DivStructureHeader h5{
+  font-size: 25px;
+}
+
+
+
 
 // .divS9{
 //   height: 80vh;
@@ -37,60 +74,115 @@
   align-items: center;
 }
 
-.chart{
-  display: table;
-  table-layout: fixed;
-  width: 95vw;
-  font-size: 15px;
-  /* max-width: 700px; */
-  height: 400px;
-  margin: 0 auto;
-  background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.1) 2%, transparent 2%);
-  background-size: 100% 50px;
-  background-position: left top;
+
+
+.titleChart1{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleChart1H3{
+  display: flex;
+  height: 10vh;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.myChart {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 85vh;
+  // border: 1px solid rgb(0, 0, 0);
+  background: #ffffff;
+}
+
+.myChartBorder{
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // border: 1px solid #000;
+  border-radius: 20px;
+  box-shadow: inset 10px 10px 30px rgba(70, 70, 70, 0.12), 
+  inset -10px -10px 30px rgba(255, 255, 255, 0.5);
+  // box-shadow: 5px 6px 9px rgb(136 136 160 / 71%), -5px 7px 17px 4px rgb(45 51 60 / 30%);
+  background: #e5e6e9;
+}
+
+.myChart1 {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 460px;
+  width: 1020px;
+  // border: 1px solid #000;
+  border-radius: 20px;
+
+}
+
+
+
+
+// .chart{
+//   display: table;
+//   table-layout: fixed;
+//   width: 95vw;
+//   font-size: 15px;
+//   /* max-width: 700px; */
+//   height: 400px;
+//   margin: 0 auto;
+//   background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.1) 2%, transparent 2%);
+//   background-size: 100% 50px;
+//   background-position: left top;
   
-  li{
-    position:relative;
-    display:table-cell;
-    vertical-align:bottom;
-    height:200px;
-  }
+//   li{
+//     position:relative;
+//     display:table-cell;
+//     vertical-align:bottom;
+//     height:200px;
+//   }
   
-  span{
-    margin:10px;
-    display: block;
-    background: rgba(#d1ecfa, .75);
-    animation: draw 2s ease-in-out;
+//   span{
+//     margin:10px;
+//     display: block;
+//     background: rgba(#d1ecfa, .75);
+//     animation: draw 2s ease-in-out;
     
-    &:before{
-      position:absolute;
-      left:0;right:0;top:100%;
-      padding:5px 1em 0;
-  		display:block;
-      text-align:center;
-      content:attr(title);
-      word-wrap: break-word;
-    }
-  }
-}
+//     &:before{
+//       position:absolute;
+//       left:0;right:0;top:100%;
+//       padding:5px 1em 0;
+//   		display:block;
+//       text-align:center;
+//       content:attr(title);
+//       word-wrap: break-word;
+//     }
+//   }
+// }
 
-@keyframes draw{
-  0%{height:0;} 
-}
+// @keyframes draw{
+//   0%{height:0;} 
+// }
 
-.othersChart{
-  display: flex;
-  margin-top: 15vh;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
 
-}
+// .othersChart{
+//   display: flex;
+//   margin-top: 15vh;
+//   align-content: center;
+//   align-items: center;
+//   justify-content: center;
+// }
 
-.othersChart1{
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
+// .othersChart1{
+//   display: flex;
+//   align-content: center;
+//   align-items: center;
+//   justify-content: center;
 
-}
+// }

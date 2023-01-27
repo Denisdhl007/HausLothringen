@@ -1,3 +1,17 @@
+// Entire body
+
+
+// document.getElementById("show-overlay-button").addEventListener("click", function(){
+//   document.getElementById("overlay").style.display = "block";
+// });
+
+
+// function hideOverlay() {
+//   document.getElementById("overlay").style.display = "none";
+// }
+
+
+
 // SECTION 3
 
 var TxtType = function(el, toRotate, period) {
@@ -137,16 +151,20 @@ function classToggle() {
 
   // SECTION 7
 
-  document.getElementById("scrollButtonToSection9").addEventListener("click", function() {
-    document.getElementById("toSection9").scrollIntoView({
-      behavior: "smooth"
-    });
-  });
+  // document.getElementById("scrollButtonToSection9").addEventListener("click", function() {
+  //   document.getElementById("toSection9").scrollIntoView({
+  //     behavior: "smooth"
+  //   });
+  // });
+
+
+
+
+
 
   // SECTION 8
 
 /*
-
   filterSelection("all") // Execute the function and show all columns
   function filterSelection(c) {
     var x, i;
@@ -200,11 +218,11 @@ function classToggle() {
 
   // SECTION 9
 
-  document.getElementById("scrollButtonToSection7").addEventListener("click", function() {
-    document.getElementById("toSection7").scrollIntoView({
-      behavior: "smooth"
-    });
-  });
+  // document.getElementById("scrollButtonToSection7").addEventListener("click", function() {
+  //   document.getElementById("toSection7").scrollIntoView({
+  //     behavior: "smooth"
+  //   });
+  // });
 
 
 
@@ -268,33 +286,216 @@ anychart.onDocumentReady(function() {
 
 
 
-  // SECTION 10
-
-
-
-
+  // SECTION 9
 
 
   const ctx = document.getElementById('myChart');
 
-  new Chart(ctx, {
-    type: 'doughnut',
+  var xValues = [
+    "United Kingdom",
+    "United States",
+    "France",
+    "Spain",
+    "Sweden",
+    "Switzerland",
+    "Portugal",
+    "Estonia",
+    "The Netherlands",
+    "Canada",
+    "Colombia",
+    "Finland",
+    "Israël",
+    "Italy",
+    "Lithuania",
+    "Luxembourg",
+    "Metaverse",
+    "Norway"
+  ];
+  var yValues = [
+    92,
+    17,
+    6,
+    4,
+    4,
+    4,
+    3,
+    3,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ];
+  var barColors = [
+    "#BECAAF",
+    "#A6D6DD",
+    "#E8E2D0",
+    "#A5B0B7",
+    "#9DD638",
+    "#E3DB93",
+
+  ];
+  
+  new Chart("myChart", {
+    type: "doughnut",
     data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      labels: xValues,
       datasets: [{
-        label: 'Allocation by country',
-        data: [12, 19, 3, 5, 2, 3],
-        borderWidth: 1
+        backgroundColor: barColors,
+        data: yValues
       }]
     },
     options: {
-      scales: {
-        y: {
-          beginAtZero: true
-        }
+      title: {
+        display: true,
+        // text: "World Wide Wine Production 2018"
       }
     }
   });
+
+
+
+
+
+  // SECTION 10
+
+  const ctx1 = document.getElementById('myChart1');
+
+  var xValues = [
+    "United Kingdom",
+    "United States",
+    "France",
+    "Spain",
+    "Sweden",
+    "Switzerland",
+    "Portugal",
+    "Estonia",
+    "The Netherlands",
+    "Canada",
+    "Colombia",
+    "Finland",
+    "Israël",
+    "Italy",
+    "Lithuania",
+    "Luxembourg",
+    "Metaverse",
+    "Norway"
+  ];
+  var yValues = [
+    92,
+    17,
+    6,
+    4,
+    4,
+    4,
+    3,
+    3,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ];
+  var barColors = [
+    "#BECAAF",
+    "#A6D6DD",
+    "#E8E2D0",
+    "#A5B0B7",
+    "#9DD638",
+    "#E3DB93",
+
+  ];
+  
+  new Chart("myChart1", {
+    type: "doughnut",
+    data: {
+      labels: xValues,
+      datasets: [{
+        backgroundColor: barColors,
+        data: yValues
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        // text: "World Wide Wine Production 2018"
+      }
+    }
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // const ctx = document.getElementById('myChart');
+
+  // new Chart(ctx, {
+  //   type: 'doughnut',
+  //   data: {
+  //     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+  //     datasets: [{
+  //       label: 'Allocation by country',
+  //       data: [49, 25, 10, 5, 3, 1, 1, 1, 1],
+  //       backgroundColor: [
+  //         'rgb(255, 99, 132)',
+  //         'rgb(54, 162, 235)',
+  //         'rgb(255, 205, 86)'],
+  //       borderWidth: 1,
+  //       hoverOffset: 4
+  //     }]
+  //   },
+  //   options: {
+  //     scales: {
+  //       y: {
+  //         beginAtZero: true
+  //       }
+  //     }
+  //   }
+  // });
 
 
 
@@ -322,6 +523,8 @@ anychart.onDocumentReady(function() {
   //     hoverOffset: 4
   //   }]
   // };
+
+
 
 
 

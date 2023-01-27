@@ -32,6 +32,32 @@
 </head>
 <body>
 
+  <!-- <button id="show-overlay-button">Afficher la page couvrant tout le site web</button>
+
+  
+  <div id="overlay">
+   //Contenu de la page couvrant tout le site web
+ -->
+
+
+<!-- 
+  // Apparaître et disparaitre des éléments sur html
+<div class="landing-page">
+    <img src="bg-image.jpg" alt="Background image">
+    <h1>Welcome</h1>
+    <script>
+        setTimeout(function(){
+            document.querySelector('.landing-page').style.display = 'none';
+            document.querySelector('.main-page').style.visibility = 'visible';
+        }, 5000);
+    </script>
+</div>
+
+<div class="main-page">
+ // Main website content here 
+</div> -->
+
+
 <header>
     <nav>
         <div class="containerimage">
@@ -103,8 +129,12 @@
 
 </header>
 
+</div>
+
+
 <!-- 2 -->
-<section>
+<section class="section2large">
+  <div class="section2ContainerBorderRadius">
     <div class="S2DivContainer">
         <div class="S2DivsMovingCubes">
 
@@ -172,96 +202,80 @@
 
         </div>
     </div>
+  </div>
 </section>
 
 
-<section1-Intro>
-  <div class="S1DivTitle">
+<section1-Intro class="section1Intro">
+  <div class="S1DivTitleHeader">
       <div class="box">
           <i class=" S4fontawesome  fa-solid fa-arrows-turn-to-dots"></i>
       </div>
-      <div class="S1DivStructure">
-        <h4 id="ToWhatWeDo"> What we do</h4>
-        <h5>Haus Lothringen bootstraps Start-ups at different fundraising stages from <b>Seed</b>  to <b>Pre-IPO</b> with funding possibilities</h5>
+      <div class="S1DivStructureHeader">
+        <h4 class="" id="ToWhatWeDo"> What we do</h4>
+        <h5>Haus Lothringen bootstraps Start-ups at different fundraising stages from <b>Seed</b>  to <b>Pre-IPO</b> with funding possibilities. In shor we help Start-Ups in their fundraising and VC in their exit round </h5>
       </div>
   </div>
 </section1-Intro>
 
-<!-- 1 -->
-<section class="S1BackGround">
-    <div class="divContainer">    
-        <!-- <div class="divHeadH3">
-            <h3>Haus Lothringen bootstraps Start-ups at different fundraising stages from <b>Seed</b>  to <b>Pre-IPO</b> with funding possibilities</h3>
-        </div> -->
-
+<!-- 3 -->
+<section class="S1BackGroundHeader">
+    <div class="divContainerHeader">    
         <div class="spacerDivision"></div>
-        <div class="divTextFlow2">
-            <div class="divMarquee">
-                <div class="divMarqueeH3">
-                    <h3>SEED</h3>
-                </div>
-                <div class="divMarqueeMini">
-                    <marquee class="S1Marquee" direction="up" scrollamount="2.8">
-                    <p>
-                    (£150,000 - £249,000) <br>
-                    (170.000€ - 284.000€) <br>
-                    (179.000$ - 299.000$) <br>
-                    </p>
-                    </marquee>
-                </div>
-            </div>
-
-            <div class="divMarquee">
-                <div class="divMarqueeH3">
-                    <h3>EARLY</h3>
-                </div>
-                <div class="divMarqueeMini">
-                    <marquee class="S1Marquee" direction="up" scrollamount="3">
-                    <p>
-                    (£250,000 - £750,000) <br>
-                    (285.000€ - 854.000€) <br>
-                    (300.000$ - 899.000$) <br>
-                    </p>
-                    </marquee>
-                </div>
-            </div>
-
-            <div class="divMarquee">
-                <div class="divMarqueeH3">
-                    <h3>GROWTH/LATE SEED/SERIES-A</h3>
-                </div>
-                <div class="divMarqueeMini">
-                    <marquee class="S1Marquee" direction="up" scrollamount="2.5">
-                    <p>
-                    (£751,000+) <br>
-                    (855.000€+) <br>
-                    (899.000$+) <br>
-                    </p>
-                    </marquee>
-
-                    
-                    <!-- https://www.eclairement.com/Faire-defiler-un-texte-en-HTML
-
-                    https://www.w3schools.in/css3/css-marquee#:~:text=What%20are%20Marquees%3F,of%20the%20W3%20HTML%20specifications.
-
-                    https://codepen.io/alphardex/pen/vYYoBNR
-
-                    -->
-                </div>
-            </div>
+        <div class="containerSection1">
+          <div class="graphImage">
+            <img class="graphImageDef" src="./public/img/FundraisingJourney_Screen-1.jpeg" alt="Fundraising journey">
+          </div>
+          <div class="spacerDivision"></div>
         </div>
 
-        <div class="spacerDivision"></div>
 
-        <div class="divHeadSecondH3">
-            <h3> Haus Lothringen helps Start-Ups in their fundraising and VC in their exit round</h3>
+        <div class="container3CardsFunds">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1 class="flipCardh1">SEED</h1>
+              </div>
+              <div class="flip-card-back">
+                <p class="flipCardP">
+                  < 299.000$
+                  </p>
+              </div>
+            </div>
+          </div>
+
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h1 class="flipCardh1">EARLY</h1>
+                </div>
+                <div class="flip-card-back">
+                      <p class="flipCardP">
+                        < 899.000$
+                    </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h1 class="flipCardh1">GROWTH/LATE SEED/SERIES-A</h1>
+                </div>
+                <div class="flip-card-back">
+                  <p class="flipCardP">
+                    > 900.000$ 
+                    </p>
+                </div>
+              </div>
+            </div>
         </div>
 
     </div>
 </section>
 
 <!-- 4 -->
-<section>
+<section class="section4large">
     <div class="S4DivContainer">
 
         <div class="S4DivTitle">
@@ -315,7 +329,6 @@
                     </div>
                 </div>
             </figure>
-        </div>
     </div>
 
         <!-- 
@@ -415,21 +428,21 @@
 
 -->
 
-<section5-Intro>
-    <div class="S5DivTitle">
+<section class="section5Intro">
+    <div class="section5DivTitleHeader">
         <div class="box">
             <i class=" S4fontawesome fa-solid fa-person-walking-arrow-right"></i>
         </div>
-        <div class="S5DivStructure">
+        <div class="section5DivStructureHeader">
             <h4> Advisory</h4>
             <h5>We currently facilitate your fundraising & exit process in four major steps: Haus Lothringen acts as a drive belt.</h5>
         </div>
     </div>
-</section5-Intro>
+</section>
 
 <!-- 5 -->
 <section>
-    <div class="S5DivContainer">
+    <div class="section5DivContainer">
         <div class="containerS5">
             <div class="cardS5">
                 <div class="face face1">
@@ -467,7 +480,7 @@
                 </div>
                 <div class="face face2">
                     <div class="contentS5">
-                        <p>We do our best to connect your business with funds</p>
+                        <p>Best effort to make the connection</p>
                             <a href="https://www.linkedin.com/company/haus-lothringen-capital-investments" target="_blank">Contact Us</a>
                     </div>
                 </div>
@@ -491,17 +504,17 @@
 </section>
 
 
-<section6-Intro>
-    <div class="S6DivTitle">
+<section class="section6Intro">
+    <div class="section6DivTitleHeader">
         <div class="box">
             <i class=" S4fontawesome fa-solid fa-book-atlas"></i>
         </div>
-        <div class="S6DivStructure">
+        <div class="section6DivStructureHeader">
             <h4> Research </h4>
             <h5>Future Haus Lothringen will be built to serve both Founders and Investors, VC by opening its portfolio to investors. We also seek to bridge the gap between innovation centers and start-ups.</h5>
         </div>
     </div>
-</section6-Intro>
+</section>
 
 <!-- 6 -->
 <section>
@@ -578,7 +591,7 @@
             <div class="divS7SousStructure">
                 <h4 id="toSection_7"> Investments</h4>
                 <h5>start-ups in portfolio</h5>
-                <button class="s7Btn" id="scrollButtonToSection9"><a href="#toSection9">Jump directly to our portfolio allocation</a></button>
+                <!-- <button class="s7Btn" id="scrollButtonToSection9"><a href="#toSection9">Jump directly to our portfolio allocation</a></button> -->
             </div>
         </div>
 
@@ -2811,35 +2824,29 @@ END PORTFOLIO SELECTOR
                 </div>
               </li>
             </ul>
-          </div>      -->
+          </div>   -->
         </div>
 </div>
 </section>
 
-<section9-Intro>
-    <div class="S6DivTitle">
+<section class="section9Intro">
+    <div class="section9DivTitleHeader">
         <div class="box">
             <i class=" S4fontawesome fa-solid fa-book-atlas"></i>
         </div>
-        <div class="S6DivStructure">          
+        <div class="section9DivStructureHeader">          
             <h4 id="toSection_9"> Allocation </h4>
             <h5>Here is current Haus Lothringen Potfolio allocation by country and by sectors expressed in committed funds</h5>
-            <button class="s9Btn" id="scrollButtonToSection7"><a href="#toSection7">Back to Start-Ups details </a></button>
+            <!-- <button class="s9Btn" id="scrollButtonToSection7"><a href="#toSection7">Back to Start-Ups details </a></button> -->
 
         </div>
     </div>
-</section9-Intro>
+</section>
 
 
 <!-- 9 -->
-<section>
-  <!-- https://codepen.io/ancoor/pen/rNLKbZm -->
-
+<!-- <section>
     <div class="S9DivContainer">
-      <!-- <div class="divS9">
-        <canvas id="myChart"></canvas>
-      </div> -->
-
       <ul class="chart">
         <li>
           <span style="height:66%" title="United Kingdom 66%"></span>
@@ -2877,45 +2884,24 @@ END PORTFOLIO SELECTOR
     <div class="othersChart">
       <p>Canada, Colombia, Finland, Israël, Italy, Lithuania, Luxembourg, Metaverse, Norway</p>
     </div>
-</section>
+</section> -->
 
-
-<!-- TEST POUR CHARTS SECTION 10 -->
-
-
-
+<!-- 9 -->
 <section>
-
-  <div>
-    <canvas id="myChart"></canvas>
+  <div class="titleChart1">
+    <h3 class="titleChart1H3">Potfolio allocation by country</h3>
   </div>
-  
-
-
-
-  
-
-  <div class="containerDivChart">
-    <div id="containerChart"></div>
+  <div class="myChart">
+    <div class="myChartBorder">
+      <div class="myChart1">
+        <canvas id="myChart" ></canvas>
+      </div>
+    </div>
   </div>
+  </section>
 
-
-
-<!-- test 2 -->
 <!-- 
-<div class="donutAllocation">
-  <div class="donut instalment2">
-    <div class="donut-default"></div>
-    <div class="donut-line"></div>
-    <div class="donut-text"></div>
-    <div class="donut-case"></div>
-  </div>
-</div> -->
 
-</section>
-
-
-<!-- 10 -->
 <section class="section10">
   <div class="S10DivContainer">
     <ul class="chart">
@@ -2962,7 +2948,21 @@ END PORTFOLIO SELECTOR
     <p>Aerospace, Insurance, Entertainment</p>
   </div>
 
-</section>
+</section> -->
+
+<!-- 10 -->
+<section>
+  <div class="titleChart1">
+    <h3 class="titleChart1H3">Potfolio allocation by sector</h3>
+  </div>
+  <div class="myChart">
+    <div class="myChartBorder2">
+      <div class="myChart2">
+        <canvas id="myChart1" ></canvas>
+      </div>
+    </div>
+  </div>
+  </section>
 
 
 <footer>
@@ -2990,7 +2990,8 @@ END PORTFOLIO SELECTOR
   </div>
 </section>
 
+
+</body>
 <script src="./public/script/main.js"></script>
   
-</body>
 </html>

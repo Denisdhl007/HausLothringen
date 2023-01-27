@@ -1,29 +1,40 @@
-.S6DivStructure{
-    display: flex;
-    width: 70vw;
-    // height: 20vh;
-    padding-right: 10vw;
-    flex-direction: column;
-    align-items: flex-start;
-}
+// INTRO
 
-.S6DivTitle{
-  background-color: #e8e5e2;
+.section6Intro{
   display: flex;
-  align-items: center;
+  background-color: rgb(232, 229, 226);
   width: 100vw;
-  height: 35vh;
-
+  height: 33vh;
   justify-content: center;
 }
 
-.S6DivStructure h4{
-    font-size: 45px;
+.section6DivTitleHeader{
+  display: flex;
+  background-color: rgb(232, 229, 226);
+  -webkit-animation: animation 5s infinite ease-in-out;
+  animation: animation 5s infinite ease-in-out;
+  background-size: 400% 400%;
+  display: flex;
+  align-items: center;
+  width: 70vw;
+  justify-content: flex-start;
 }
 
-.S6DivStructure h5{
-    font-size: 25px;
+.section6DivStructureHeader{
+  display: flex;
+  width: 50vw;
+  flex-direction: column;
+  align-items: flex-start;
 }
+
+.section6DivStructureHeader h4{
+  font-size: 45px;
+}
+
+.section6DivStructureHeader h5{
+  font-size: 25px;
+}
+
 
 .containerS6header{
   display: flex;
@@ -48,9 +59,7 @@
   background-color: rgb(232, 229, 226);
   justify-content: center;
   width: 100vw;
-  height: 70vh
-  vh
-  ;
+  height: 70vh;
 }
 
 .containerS6-1 {
