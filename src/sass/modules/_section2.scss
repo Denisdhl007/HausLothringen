@@ -21,8 +21,8 @@
     background-size: 400% 400%;
     animation: gradient 15s infinite ease-in-out;
     display: flex;
-
-    border: 1px solid black;
+    border: 1px solid #00000042;
+    box-shadow: 0px 0px 30px rgb(0 0 0 / 82%), inset -10px -10px 30px rgb(255 255 255 / 50%);
     border-radius: 20px;
     height: 90vh;
     width: 90vw;

@@ -21406,6 +21406,63 @@ body {
   background-color: rgb(255, 254, 254);
 }
 
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation: fadeOut 2s ease-in-out;
+          animation: fadeOut 2s ease-in-out;
+}
+
+.preloader-circle {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  -webkit-animation: spin 2s ease-in-out infinite;
+          animation: spin 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 .containerimage {
   display: flex;
   width: 100vw;
@@ -21980,6 +22037,27 @@ footer {
   transition: 0.5s ease;
 }
 
+.backToTopDivBtn {
+  border-radius: 90px;
+}
+
+.backToTopBtn1 {
+  height: 30px;
+  width: 30px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 90px;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.backToTopBtn1 i {
+  color: black;
+}
+
+.backToTopDivBtn :hover {
+  background-color: rgb(255, 255, 255);
+}
+
 @media (max-width: 991px) {
   .col-md-4 {
     flex: 0 0 50%;
@@ -22163,8 +22241,8 @@ footer {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
-  border: 1px solid rgba(94, 201, 236, 0.2784313725);
-  background: rgba(53, 220, 185, 0.3607843137);
+  border: 1px solid rgba(255, 255, 255, 0.2784313725);
+  background: rgba(52, 202, 171, 0.631372549);
 }
 
 .flip-card-back {
@@ -22177,7 +22255,7 @@ footer {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
-  border: 1px solid rgba(94, 201, 236, 0.2784313725);
+  border: 1px solid rgba(255, 255, 255, 0.2784313725);
   background: rgba(53, 220, 185, 0.3607843137);
 }
 
@@ -22187,6 +22265,52 @@ footer {
 
 .flipCardP {
   font-size: 30px;
+}
+
+/*** Team ***/
+.team-item .team-text {
+  position: relative;
+  height: 100px;
+  overflow: hidden;
+}
+
+.team-item .team-title {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--light);
+  transition: 0.5s;
+}
+
+.team-item:hover .team-title {
+  top: -100px;
+}
+
+.team-item .team-social {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 100px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary);
+  transition: 0.5s;
+}
+
+.team-item .team-social .btn {
+  margin: 0 3px;
+}
+
+.team-item:hover .team-social {
+  top: 0;
 }
 
 .section2large {
@@ -22202,7 +22326,8 @@ footer {
   -webkit-animation: gradient 15s infinite ease-in-out;
           animation: gradient 15s infinite ease-in-out;
   display: flex;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.2588235294);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.82), inset -10px -10px 30px rgba(255, 255, 255, 0.5);
   border-radius: 20px;
   height: 90vh;
   width: 90vw;
@@ -23008,10 +23133,11 @@ h1, .h1 {
           animation: gradient 15s infinite ease-in-out;
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
   border-radius: 20px;
   height: 90vh;
   width: 90vw;
+  border: 1px solid rgba(0, 0, 0, 0.2588235294);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.82), inset -10px -10px 30px rgba(255, 255, 255, 0.5);
 }
 
 @keyframes gradient {
@@ -24194,6 +24320,7 @@ h2 a:hover, .h2 a:hover {
   width: 100vw;
   height: 33vh;
   justify-content: center;
+  background-color: rgba(222, 222, 222, 0.804);
 }
 
 .section9DivTitleHeader {
@@ -24243,6 +24370,17 @@ h2 a:hover, .h2 a:hover {
   align-items: center;
 }
 
+.charts2display {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(222, 222, 222, 0.804);
+}
+
+.chart1section {
+  display: block;
+  height: 100vh;
+}
+
 .titleChart1 {
   display: flex;
   align-content: center;
@@ -24262,13 +24400,10 @@ h2 a:hover, .h2 a:hover {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  width: 100vw;
-  height: 85vh;
-  background: #ffffff;
 }
 
-.myChartBorder {
-  width: 80vw;
+.myChartBorder1 {
+  width: 40vw;
   height: 80vh;
   display: flex;
   justify-content: center;
@@ -24287,32 +24422,23 @@ h2 a:hover, .h2 a:hover {
   border-radius: 20px;
 }
 
-.myChart {
-  display: flex;
-  justify-content: center;
-  box-sizing: border-box;
-  width: 100vw;
-  height: 85vh;
-  background: #ffffff;
-}
-
 .myChartBorder2 {
-  width: 80vw;
-  height: 80vh;
+  height: 82vh;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  box-shadow: inset 10px 10px 30px rgba(70, 70, 70, 0.12), inset -10px -10px 30px rgba(255, 255, 255, 0.5);
-  background: #e5e6e9;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.82), inset -10px -10px 30px rgba(255, 255, 255, 0.5);
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.467);
 }
 
 .myChart2 {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  height: 460px;
-  width: 1020px;
+  height: 450px;
+  width: 530px;
   border-radius: 20px;
 }
 

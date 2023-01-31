@@ -46,6 +46,7 @@
     align-items: center;
 }
 
+
 // @keyframes animation {
 //     0% {
 //         background-position: 0% 50%;
@@ -121,8 +122,12 @@
     align-content: center;
 }
 
-// .containerSection1{
-
+// Zoom in on the image
+// .graphImage :hover{
+//     display: flex;
+//     height: 100vh;
+//     width: 75vw;
+//     align-items: center;
 // }
 
 .graphImage{
@@ -131,6 +136,13 @@
     width: 60vw;
     align-items: center;
 }
+
+// .graphImage :hover{
+//     display: flex;
+//     height: 100vh;
+//     width: 75vw;
+//     align-items: center;
+// }
 
 .graphImageDef{
     display: flex;
@@ -196,8 +208,8 @@
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(0px);
     -webkit-backdrop-filter: blur(0px);
-    border: 1px solid #5ec9ec47;
-    background: #35dcb95c;
+    border: 1px solid #ffffff47;
+    background: #34caaba1;
   }
   
   .flip-card-back {
@@ -211,7 +223,7 @@
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(0px);
     -webkit-backdrop-filter: blur(0px);
-    border: 1px solid #5ec9ec47;
+    border: 1px solid #ffffff47;
     background: #35dcb95c;
   }
   

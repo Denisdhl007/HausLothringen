@@ -5,6 +5,7 @@
   width: 100vw;
   height: 33vh;
   justify-content: center;
+  background-color: rgba(222, 222, 222, 0.804);
 }
 
 .section9DivTitleHeader{
@@ -33,25 +34,6 @@
   font-size: 25px;
 }
 
-
-
-
-// .divS9{
-//   height: 80vh;
-//   width: 80vw;
-//   border: solid 1px black;
-// }
-
-// https://codepen.io/dazld/pen/npydRK
-
-  // .canvas1{
-  //   border: 1px solid black;
-  //   display: flex;
-  //   width: 80vh;
-  //   height: 30vw;
-  // }
-
-
 .s9Btn{
     border-radius: 10px;
     border: 1PX solid black;
@@ -74,7 +56,16 @@
   align-items: center;
 }
 
+.charts2display{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(222, 222, 222, 0.804);
+}
 
+.chart1section{
+  display: block;
+  height: 100vh;
+}
 
 .titleChart1{
   display: flex;
@@ -95,14 +86,13 @@
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  width: 100vw;
-  height: 85vh;
   // border: 1px solid rgb(0, 0, 0);
-  background: #ffffff;
 }
 
-.myChartBorder{
-  width: 80vw;
+
+// Choix de style porus les cartouches
+.myChartBorder1{
+  width: 40vw;
   height: 80vh;
   display: flex;
   justify-content: center;
@@ -123,8 +113,34 @@
   width: 1020px;
   // border: 1px solid #000;
   border-radius: 20px;
-
 }
+
+// Choix de style porus les cartouches
+.myChartBorder2{
+  height: 82vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px rgb(0 0 0 / 82%), inset -10px -10px 30px rgb(255 255 255 / 50%);
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.467);
+}
+
+
+// Choix de style porus les cartouches
+
+
+.myChart2 {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 450px;
+  width: 530px;
+  border-radius: 20px;
+}
+
+
 
 
 

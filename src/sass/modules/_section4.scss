@@ -22,11 +22,13 @@
     animation: gradient 15s infinite ease-in-out;
     display: flex;
     flex-direction: column;
-
-    border: 1px solid black;
     border-radius: 20px;
     height: 90vh;
     width: 90vw;
+    border: 1px solid #00000042;
+    box-shadow: 0px 0px 30px rgb(0 0 0 / 82%), inset -10px -10px 30px rgb(255 255 255 / 50%);
+
+
 }
 
   @keyframes gradient {

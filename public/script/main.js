@@ -1,3 +1,22 @@
+document.addEventListener('DOMContentLoaded', () => {
+  "use strict";
+  // Preloader
+  const preloader = document.querySelector('#preloader');
+if (preloader) {
+  console.log("Preloader element found");
+  window.addEventListener('load', () => {
+    console.log("Window load event fired");
+    setTimeout(() => {
+      preloader.remove();
+    }, 1000);
+
+  });
+} else {
+  console.log("Preloader element not found");
+}
+
+
+
 // Entire body
 
 
@@ -9,6 +28,22 @@
 // function hideOverlay() {
 //   document.getElementById("overlay").style.display = "none";
 // }
+
+
+
+
+  //   // Back to top button
+  //   $(window).scroll(function () {
+  //     if ($(this).scrollTop() > 300) {
+  //         $('.back-to-top').fadeIn('slow');
+  //     } else {
+  //         $('.back-to-top').fadeOut('slow');
+  //     }
+  // });
+  // $('.back-to-top').click(function () {
+  //     $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+  //     return false;
+  // });
 
 
 
@@ -437,7 +472,7 @@ anychart.onDocumentReady(function() {
 
 
 
-
+});
 
 
 
@@ -606,3 +641,24 @@ anychart.onDocumentReady(function() {
 //   chart.draw();
   
 // });
+
+
+
+
+
+
+// Animation on scroll function and init
+
+  function aos_init() {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    });
+  }
+  window.addEventListener('load', () => {
+    aos_init();
+  });
+
+});

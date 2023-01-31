@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/css/app.css">
     <link rel="icon" type="image/x-icon" href="./public/img/favicon/Haus Lothringen-1.png">
+    <link href="./node_modules/aos/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <!--     
@@ -63,7 +64,7 @@
         <div class="containerimage">
             <div class="divImage"> <!-- navBar -->
                 <div class="navbar">
-                    <div class="navBarLeft">
+                    <div class="navBarLeft" id="Haus_lothringen_Head">
                         <a class="navLinksLogo" href="#ToWhatWeDo">Haus Lothringen</a>
                     </div>
 
@@ -205,20 +206,19 @@
   </div>
 </section>
 
-
 <section1-Intro class="section1Intro">
   <div class="S1DivTitleHeader">
       <div class="box">
           <i class=" S4fontawesome  fa-solid fa-arrows-turn-to-dots"></i>
       </div>
       <div class="S1DivStructureHeader">
-        <h4 class="" id="ToWhatWeDo"> What we do</h4>
+        <h4  class="" id="ToWhatWeDo" > What we do</h4>
         <h5>Haus Lothringen bootstraps Start-ups at different fundraising stages from <b>Seed</b>  to <b>Pre-IPO</b> with funding possibilities. In short we help Start-Ups in their fundraising and VC in their exit round </h5>
       </div>
   </div>
 </section1-Intro>
 
-<!-- 3 -->
+<!-- ancien 1 now 3-->
 <section class="S1BackGroundHeader">
     <div class="divContainerHeader">    
         <div class="spacerDivision"></div>
@@ -2836,7 +2836,7 @@ END PORTFOLIO SELECTOR
         </div>
         <div class="section9DivStructureHeader">          
             <h4 id="toSection_9"> Allocation </h4>
-            <h5>Here is current Haus Lothringen Potfolio allocation by country and by sectors expressed in committed funds</h5>
+            <h5>Current Haus Lothringen Potfolio allocation by country and by sectors expressed in committed funds</h5>
             <!-- <button class="s9Btn" id="scrollButtonToSection7"><a href="#toSection7">Back to Start-Ups details </a></button> -->
 
         </div>
@@ -2888,82 +2888,38 @@ END PORTFOLIO SELECTOR
 
 <!-- 9 -->
 <section>
-  <div class="titleChart1">
-    <h3 class="titleChart1H3">Potfolio allocation by country</h3>
-  </div>
-  <div class="myChart">
-    <div class="myChartBorder">
-      <div class="myChart1">
-        <canvas id="myChart" ></canvas>
+<div class="charts2display">
+
+  <div class="chart1section">
+    <div class="titleChart1">
+      <h3 class="titleChart1H3">Potfolio allocation by country</h3>
+    </div>
+
+    <div class="myChart">
+      <div class="myChartBorder2">
+        <div class="myChart2">
+          <canvas id="myChart" ></canvas>
+        </div>
       </div>
     </div>
   </div>
-  </section>
 
-<!-- 
 
-<section class="section10">
-  <div class="S10DivContainer">
-    <ul class="chart">
-      <li>
-        <span style="height:29%" title="Technology 29%"></span>
-      </li>
-      <li>
-        <span style="height:28%" title="Financial Services 28%"></span>
-      </li>
-      <li>
-        <span style="height:8%" title="Real Estate 8%"></span>
-      </li>
-      <li>
-        <span style="height:10%" title="Energy 10%"></span>
-      </li>
-      <li>
-        <span style="height:3%" title="Food & Beverage 3%"></span>
-      </li>
-      <li>
-        <span style="height:4%" title="Travel 4%"></span>
-      </li>
-      <li>
-        <span style="height:4%" title="Investment & Services 4%"></span>
-      </li>
-      <li>
-        <span style="height:4%" title="Health 4%"></span>
-      </li>
-      <li>
-        <span style="height:4%" title="Wellness & Fitness 4%"></span>
-      </li>
-      <li>
-        <span style="height:1%" title="Avertising 1%"></span>
-      </li>
-      <li>
-        <span style="height:2%" title="Consumers 2%"></span>
-      </li>
-      <li>
-        <span style="height:3%" title="Others 3%"></span>
-      </li>
-    </ul>            
-  </div>
+  <div class="chart1section">
+    <div class="titleChart1">
+      <h3 class="titleChart1H3">Potfolio allocation by sector</h3>
+    </div>
 
-  <div class="othersChart1">
-    <p>Aerospace, Insurance, Entertainment</p>
-  </div>
-
-</section> -->
-
-<!-- 10 -->
-<section>
-  <div class="titleChart1">
-    <h3 class="titleChart1H3">Potfolio allocation by sector</h3>
-  </div>
-  <div class="myChart">
-    <div class="myChartBorder2">
-      <div class="myChart2">
-        <canvas id="myChart1" ></canvas>
+    <div class="myChart">
+      <div class="myChartBorder2">
+        <div class="myChart2">
+          <canvas id="myChart1" ></canvas>
+        </div>
       </div>
     </div>
   </div>
-  </section>
-
+</div>
+</section>
 
 <footer>
     <div class="footerContainer">
@@ -2976,11 +2932,19 @@ END PORTFOLIO SELECTOR
             <h3>Follow Us</h3>
             <ul class="social-icons">
                 <li><a href="https://www.linkedin.com/company/haus-lothringen-capital-investments"target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="https://www.github.com/Denisdhl007/HausLothringen"target="_blank"></a><i class="fa-brands fa-github"></i>
+                <li><a href="https://www.github.com/Denisdhl007/HausLothringen"target="_blank"></a><i class="fa-brands fa-gith lb"></i>
                 </li>
             </ul>
         </div>
-    </div>
+<!-- Back to Top -->
+      <div class="backToTopDivBtn">
+        <a href="#Haus_lothringen_Head"></a>
+        <button class="backToTopBtn1">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    
+  </div>
 </footer>
 
 <!-- 11 -->
@@ -2990,8 +2954,13 @@ END PORTFOLIO SELECTOR
   </div>
 </section>
 
+<div id="preloader">
+  <div class="preloader-circle"></div>
+</div>
+
+<script src="./node_modules/aos/aos.js"></script>
+
+<script src="./public/script/main.js"></script>
 
 </body>
-<script src="./public/script/main.js"></script>
-  
 </html>
