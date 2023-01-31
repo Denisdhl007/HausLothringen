@@ -1,16 +1,16 @@
 .S7DivTitle{
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    width: 100vw;
-    height: 50vh;
-    justify-content: center;
-  }
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 50vh;
+  justify-content: center;
+}
 
-  .S7DivStructure{
-    display: flex;
-    width: 40vw;
-    align-items: flex-start;
+.S7DivStructure{
+  display: flex;
+  width: 40vw;
+  align-items: flex-start;
 }
 
 .S7DivStructure h4{
@@ -22,29 +22,36 @@
 }
 
 .S7ContainerStructure{
-    display: flex;
-    background-color: rgb(232, 229, 226);
-    height: 80vh;
-    justify-content: center;
-  }
+  display: flex;
+  background-color: rgb(232, 229, 226);
+  height: 80vh;
+  justify-content: center;
+}
+
 .divS7SousStructure{
   display: flex;
   flex-direction: column;
 }
 
-.s7Btn{
-  border-radius: 10px;
-  border: 1PX solid black;
+.section-target {
+  position: relative;
 }
 
-.s7Btn a{
-  color: black;
-  text-decoration: none;
-}
-.s7Btn:hover {
-  transition: 1s ease;
-  background-color: rgb(214, 249, 255);
-}
+// .s7Btn{
+//   border-radius: 10px;
+//   border: 1PX solid black;
+// }
+
+// .s7Btn a{
+//   color: black;
+//   text-decoration: none;
+// }
+// .s7Btn:hover {
+//   transition: 1s ease;
+//   background-color: rgb(214, 249, 255);
+// }
+
+
 
 // .divHoverCountdown{
 //   display: flex;

@@ -1,3 +1,45 @@
+
+SLIDER
+
+  
+        https://codepen.io/argyleink/pen/yLovWjz
+
+
+https://freefrontend.com/jquery-menus/
+
+
+
+https://codepen.io/hsynlms/pen/xMbGaO
+
+https://codepen.io/CodeBoomer/pen/EyjeKj
+
+https://codepen.io/tnormington/pen/LNpGYX
+
+https://codepen.io/Roemerdt/pen/NxPjVB/
+
+https://codepen.io/chris22smith/pen/NWwzYrZ
+
+https://codepen.io/antoniolee/pen/ZEGRwdp
+
+
+https://freefrontend.com/css-ripple-effects/
+
+https://codepen.io/alvarotrigo/pen/MWQyZrN
+
+https://www.sliderrevolution.com/resources/slide-menu/
+
+
+
+https://codepen.io/alvarotrigo/pen/ExQKGoV
+
+
+
+
+
+
+
+
+
 https://codepen.io/alvaromontoro/pen/GRNmdzB
 
 SUN RAY EFFECT

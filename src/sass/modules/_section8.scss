@@ -1,52 +1,47 @@
-// .S8DivContainer{
-//     // background-color: rgb(40, 60, 128);
-// }
 
 .scrollSection{
   position: sticky;
   display: flex;
-  top: 20vh; 
-  width: 8vw;
+  top: 20vh;  
   margin-left: 89vw;
   flex-direction: column;
   justify-content: center;
 }
 
-.scrollSection button{
-  text-align: center;
+.backToTopDivBtn8 a{
+	display: flex;
+	justify-content: center;
+  align-items: center;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+	border-radius: 90px;
+	height: 60px;
+	width: 60px;
+	text-decoration: none;
+
+	background-color: rgba(131, 212, 247, 0.795);
+	color: white;
+	border: 1px solid rgb(255, 255, 255);
 }
 
-.s8BtnBack{
-  border-radius: 10px;
-  border: 1PX solid black;
-  margin: 1vh 1vw;
-}
-
-.s8BtnBack a{
-  color: black;
+.backToTopDivBtn8 i{
   text-decoration: none;
 }
 
-.s8BtnBack:hover {
-  transition: 0.5s ease;
-  background-color: rgb(214, 249, 255);
+.backToTopDivBtn8 :hover{
+	background-color: rgb(255, 255, 255);
+	color: rgba(131, 212, 247, 0.795);
+	border: 1px solid rgba(131, 212, 247, 0.795);
+	transition: 0.5s;
 }
 
-.s8BtnSkip{
-  border-radius: 10px;
-  border: 1PX solid black;
-  margin: 1vh 1vw;
-}
 
-.s8BtnSkip a{
-  color: black;
-  text-decoration: none;
-}
 
-.s8BtnSkip:hover {
-  transition: 0.5s ease;
-  background-color: rgb(214, 249, 255);
-}
+
+
+
+
+
 
 
 
