@@ -208,16 +208,6 @@ function classToggle() {
     });
   }
 
-  // document.querySelector('#toSection_7').scrollIntoView({
-  //   behavior: 'smooth'
-  // });
-  
-  // document.querySelector('#toSection_9').scrollIntoView({
-  //   behavior: 'smooth'
-  // });
-  
-    
-
 
 
   // SECTION 9
