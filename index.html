@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/css/app.css">
     <link rel="icon" type="image/x-icon" href="./public/img/favicon/Haus Lothringen-1.png">
-    <link href="./node_modules/aos/aos.css" rel="stylesheet">
+    <!-- <link href="./node_modules/aos/aos.css" rel="stylesheet"> -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 
@@ -64,10 +64,11 @@
 <header>
     <nav>
         <div class="containerimage">
-            <div class="divImage"> <!-- navBar -->
-                <div class="navbar">
-                    <div class="navBarLeft" id="Haus_lothringen_Head">
-                        <a class="navLinksLogo" href="#ToWhatWeDo">Haus Lothringen</a>
+            <div class="divImage" id="thumbnail"> <!-- navBar -->
+                <div id="HausLothringenHead" class="navbar">
+
+                    <div class="navBarLeft" >
+                        <a class="navLinksLogo" href="" id="scrollToWhatWeDo" >Haus Lothringen</a>
                     </div>
 
                     <div class="navBarCenter">
@@ -214,7 +215,7 @@
           <i class=" S4fontawesome  fa-solid fa-arrows-turn-to-dots"></i>
       </div>
       <div class="S1DivStructureHeader">
-        <h4  class="" id="ToWhatWeDo" > What we do</h4>
+        <h4  class="" id="WhatWeDo" > What we do</h4>
         <h5>Haus Lothringen bootstraps Start-ups at different fundraising stages from <b>Seed</b>  to <b>Pre-IPO</b> with funding possibilities. In short we help Start-Ups in their fundraising and VC in their exit round </h5>
       </div>
   </div>
@@ -506,7 +507,8 @@
         </div>
         <div class="S7DivStructure">
             <div class="divS7SousStructure">
-                <h4 id="toSection7" class="section-target"> Investments</h4>
+                <h4 id="section7" 
+                class="section-target"> Investments</h4>
                 <h5>start-ups in portfolio</h5>
             </div>
         </div>
@@ -533,30 +535,22 @@
 
       <div class="scrollSection"> 
 
-        <!-- <div class="backToTopDivBtn8">
-          <a href="#toSection7" onclick="scrollToSection7()">
+        <div class="backToTopDivBtn8">
+          <a href="#" id="scrollToSection7">
             <i class="fa-solid fa-arrow-up"></i>
           </a>
         </div>
-        
-        <div class="backToTopDivBtn8">
-          <a href="#toSection9" onclick="scrollToSection9()">
-            <i class="fa-solid fa-arrow-down"></i>
-          </a>
-        </div> -->
-
 
         <div class="backToTopDivBtn8">
-          <a href="#toSection7">
-            <i class="fa-solid fa-arrow-up"></i>
-          </a>
-        </div>
-        
-        <div class="backToTopDivBtn8">
-          <a href="#toSection9">
+          <a href="#" id="scrollToSection9">
             <i class="fa-solid fa-arrow-down"></i>
           </a>
         </div>
+        
+
+        
+
+
 
       </div>
 
@@ -2600,7 +2594,6 @@
             </ul>
           </div>   -->
         </div>
-</div>
 </section>
 
 
@@ -2612,8 +2605,16 @@
 
 
 
+
+
+
+
+
+
+
     
-    <!-- MAIN (Center website) -->
+
+<!--     
     <div class="main">
     
       <h1>MYLOGO.COM</h1>
@@ -2628,7 +2629,6 @@
         <button class="btnFilter" onclick="filterSelection('people')"> People</button>
       </div>
       
-      <!-- Portfolio Gallery Grid -->
       <div class="row">
         <div class="column nature">
           <div class="content">
@@ -2690,36 +2690,16 @@
         </div>
         <div class="column people">
           <div class="content">
-          <img src="/w3images/people3.jpg" alt="Car" style="width:100%">
+          <img src="" alt="Car" style="width:100%">
             <h4>Woman</h4>
             <p>Lorem ipsum dolor..</p>
           </div>
         </div>
-      <!-- END GRID -->
+
       </div>
-      
-      <!-- END MAIN -->
       </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ -->
 
 
 
@@ -2796,7 +2776,7 @@
             <i class=" S4fontawesome fa-solid fa-book-atlas"></i>
         </div>
         <div class="section9DivStructureHeader">          
-            <h4 id="toSection9"> Allocation </h4>
+            <h4 id="section9"> Allocation </h4>
             <h5>Current Haus Lothringen Potfolio allocation by country and by sectors expressed in committed funds</h5>
         </div>
     </div>
@@ -2896,12 +2876,13 @@
             </ul>
         </div>
 <!-- Back to Top -->
+
       <div class="backToTopDivBtn">
-        <a href="#Haus_lothringen_Head">
+        <a href="#" id="scrollToHausLothringenHead">
           <i class="fa-solid fa-arrow-up"></i>
         </a>
       </div>
-  
+
   </div>
 </footer>
 
@@ -2921,12 +2902,18 @@
 </div>
 
 
+<!-- 
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script> -->
 
+<!-- <script src="simpleParallax.js"></script> -->
+
+<!-- 
+<script src="./node_modules/aos/aos.js"></script> -->
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="./public/script/main.js"></script>
 <script src="./public/script/team.js"></script>
-
-<script src="./node_modules/aos/aos.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
 </body>

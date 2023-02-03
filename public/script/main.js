@@ -1,3 +1,20 @@
+// // ES6 import
+// import simpleParallax from 'simple-parallax-js';
+ 
+// // CommonJS
+// const simpleParallax = require('simple-parallax-js');
+
+
+
+
+// Header
+
+// var image = document.getElementsById('thumbnail');
+// new simpleParallax(image);
+
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
   // Preloader
@@ -196,6 +213,40 @@ function classToggle() {
 
   // SECTION 8
 
+  document.getElementById("scrollToWhatWeDo").addEventListener("click", function(event) {
+    event.preventDefault();
+    document.getElementById("WhatWeDo").scrollIntoView({ behavior: "smooth" });
+  });
+  
+
+  document.getElementById("scrollToSection7").addEventListener("click", function(event) {
+    event.preventDefault();
+    document.getElementById("section7").scrollIntoView({ behavior: "smooth" });
+  });
+  
+
+  document.getElementById("scrollToSection9").addEventListener("click", function(event) {
+    event.preventDefault();
+    document.getElementById("section9").scrollIntoView({ behavior: "smooth" });
+  });
+  
+
+  document.getElementById("scrollToHausLothringenHead").addEventListener("click", function(event) {
+    event.preventDefault();
+    document.getElementById("HausLothringenHead").scrollIntoView({ behavior: "smooth" });
+  });
+  
+
+
+
+
+
+
+
+
+
+
+
   // function scrollToSection7() {
   //   document.querySelector('#toSection7Btn').scrollIntoView({
   //     behavior: 'smooth'
@@ -230,7 +281,7 @@ function classToggle() {
 
   // SECTION 8
 
-  
+  // portfolio interactif avec une galerie de photos. Il utilise des boutons pour filtrer les photos en fonction de leur catégorie (nature, voitures, personnes). La fonction JavaScript filterSelection() est utilisée pour montrer uniquement les images associées à la catégorie sélectionnée. Les fonctions AddClass() et RemoveClass() ajoutent ou suppriment des classes aux éléments HTML pour les afficher ou les masquer en fonction de la catégorie choisie. Les images sont disposées dans des colonnes divisées en grille et ont une classe désignant leur catégorie.
 
   filterSelection("all")
   function filterSelection(c) {
