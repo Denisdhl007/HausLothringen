@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   width: 100vw;
-  height: 50vh;
+  height: 36vh;
   justify-content: center;
 }
 
@@ -134,15 +134,14 @@
 }
 
 .cube-wrapper { 
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   top: 50%;
   left: 50%;
   position: absolute;
   box-shadow: 10px 10px 54px -6px rgba(0,0,0,0.75);
   transform: translate(-50%, -50%);
 }
-
 
 .cube{
 width: 100px;

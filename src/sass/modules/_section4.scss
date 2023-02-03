@@ -233,13 +233,15 @@ p {
 }
 
 .box {
-    text-align: center;
-	font-size: 2vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    margin-bottom: 1vh;
+  text-align: center;
+  font-size: 2vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 1vh;
 	border: 0.35rem solid;
+  border-radius: 20px;
 	padding: 1vw;
+
 	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
 	animation: borderRotate var(--d) linear infinite forwards;
 }

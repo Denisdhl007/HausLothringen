@@ -239,195 +239,55 @@ function classToggle() {
 
 
 
-
-
-
-
-
-
-
-
-  // function scrollToSection7() {
-  //   document.querySelector('#toSection7Btn').scrollIntoView({
-  //     behavior: 'smooth'
-  //   });
-  // }
-
-
-  // document.getElementById("goToSection9").addEventListener("click", function() {
-  //   document.getElementById("toSection9Btn").scrollIntoView({ behavior: "smooth" });
-  // });
-  
-
-  // function scrollToSection9() {
-  //   // récupérer la référence à l'élément qui correspond à la section 9
-  //   var section9 = document.getElementById("section9");
-  //   // faire défiler la page jusqu'à la section 9
-  //   section9.scrollIntoView({ behavior: "smooth" });
-  // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   // SECTION 8
 
   // portfolio interactif avec une galerie de photos. Il utilise des boutons pour filtrer les photos en fonction de leur catégorie (nature, voitures, personnes). La fonction JavaScript filterSelection() est utilisée pour montrer uniquement les images associées à la catégorie sélectionnée. Les fonctions AddClass() et RemoveClass() ajoutent ou suppriment des classes aux éléments HTML pour les afficher ou les masquer en fonction de la catégorie choisie. Les images sont disposées dans des colonnes divisées en grille et ont une classe désignant leur catégorie.
 
-  filterSelection("all")
-  function filterSelection(c) {
-    var x, i;
-    x = document.getElementsByClassName("column");
-    if (c == "all") c = "";
-    for (i = 0; i < x.length; i++) {
-      RemoveClass(x[i], "show");
-      if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
-    }
-  }
+
+
+  // filterSelection("all")
+  // function filterSelection(c) {
+  //   var x, i;
+  //   x = document.getElementsByClassName("column");
+  //   if (c == "all") c = "";
+  //   for (i = 0; i < x.length; i++) {
+  //     RemoveClass(x[i], "show");
+  //     if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+  //   }
+  // }
   
-  function AddClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-      if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-    }
-  }
+  // function AddClass(element, name) {
+  //   var i, arr1, arr2;
+  //   arr1 = element.className.split(" ");
+  //   arr2 = name.split(" ");
+  //   for (i = 0; i < arr2.length; i++) {
+  //     if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  //   }
+  // }
   
-  function RemoveClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-      while (arr1.indexOf(arr2[i]) > -1) {
-        arr1.splice(arr1.indexOf(arr2[i]), 1);     
-      }
-    }
-    element.className = arr1.join(" ");
-  }
+  // function RemoveClass(element, name) {
+  //   var i, arr1, arr2;
+  //   arr1 = element.className.split(" ");
+  //   arr2 = name.split(" ");
+  //   for (i = 0; i < arr2.length; i++) {
+  //     while (arr1.indexOf(arr2[i]) > -1) {
+  //       arr1.splice(arr1.indexOf(arr2[i]), 1);     
+  //     }
+  //   }
+  //   element.className = arr1.join(" ");
+  // }
   
   
-  // Add active class to the current button (highlight it)
-  var btnContainer = document.getElementById("myBtnContainer");
-  var btns = btnContainer.getElementsByClassName("btnFilter");
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function(){
-      var current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active", "");
-      this.className += " active";
-    });
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  // SECTION 9
-
-  // document.getElementById("scrollButtonToSection7").addEventListener("click", function() {
-  //   document.getElementById("toSection7").scrollIntoView({
-  //     behavior: "smooth"
+  // // Add active class to the current button (highlight it)
+  // var btnContainer = document.getElementById("myBtnContainer");
+  // var btns = btnContainer.getElementsByClassName("btnFilter");
+  // for (var i = 0; i < btns.length; i++) {
+  //   btns[i].addEventListener("click", function(){
+  //     var current = document.getElementsByClassName("active");
+  //     current[0].className = current[0].className.replace(" active", "");
+  //     this.className += " active";
   //   });
-  // });
-
-
-
-
-/*
-
-  // TEST
-
-  // set the data
-var data = [
-  {x: "White", value: 223553265},
-  {x: "Black or African American", value: 38929319},
-  {x: "American Indian and Alaska Native", value: 2932248},
-  {x: "Asian", value: 14674252},
-  {x: "Native Hawaiian and Other Pacific Islander", value: 540013},
-  {x: "Some Other Race", value: 19107368},
-  {x: "Two or More Races", value: 9009073}
-];
-
-
-anychart.onDocumentReady(function() {
-
-  // set the data
-  var data = [
-      {x: "White", value: 223553265, exploded: true},
-      {x: "Black or African American", value: 38929319},
-      {x: "American Indian and Alaska Native", value: 2932248},
-      {x: "Asian", value: 14674252},
-      {x: "Native Hawaiian and Other Pacific Islander", value: 540013},
-      {x: "Some Other Race", value: 19107368},
-      {x: "Two or More Races", value: 9009073}
-  ];
-
-  
-  // create the chart
-  var chart = anychart.pie();
-
-  // set the chart title
-  chart.title("Population by Race for the United States: 2010 Census");
-
-  // add the data
-  chart.data(data);
-  
-  // sort elements
-  chart.sort("desc");  
-  
-  // set legend position
-  chart.legend().position("right");
-  // set items layout
-  chart.legend().itemsLayout("vertical");  
-
-  // display the chart in the container
-  chart.containerS9('containerS9');
-  chart.draw();
-
-});
-
-*/
-
-
-
+  // }
 
 
   // SECTION 9
@@ -580,6 +440,15 @@ anychart.onDocumentReady(function() {
 
 
 
+
+
+
+
+
+
+
+
+
 // // Animation on scroll function and init
 
 // function aos_init() {
@@ -597,181 +466,10 @@ anychart.onDocumentReady(function() {
 // });
 
 
-
-
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  // const ctx = document.getElementById('myChart');
-
-  // new Chart(ctx, {
-  //   type: 'doughnut',
-  //   data: {
-  //     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-  //     datasets: [{
-  //       label: 'Allocation by country',
-  //       data: [49, 25, 10, 5, 3, 1, 1, 1, 1],
-  //       backgroundColor: [
-  //         'rgb(255, 99, 132)',
-  //         'rgb(54, 162, 235)',
-  //         'rgb(255, 205, 86)'],
-  //       borderWidth: 1,
-  //       hoverOffset: 4
-  //     }]
-  //   },
-  //   options: {
-  //     scales: {
-  //       y: {
-  //         beginAtZero: true
-  //       }
-  //     }
-  //   }
-  // });
-
-
-
-  // const ctx = document.getElementById('myChart');
-
-  // const config = {
-  //   type: 'doughnut',
-  //   data: data,
-  // };
-
-  // const data = {
-  //   labels: [
-  //     'Red',
-  //     'Blue',
-  //     'Yellow'
-  //   ],
-  //   datasets: [{
-  //     label: 'My First Dataset',
-  //     data: [300, 50, 100],
-  //     backgroundColor: [
-  //       'rgb(255, 99, 132)',
-  //       'rgb(54, 162, 235)',
-  //       'rgb(255, 205, 86)'
-  //     ],
-  //     hoverOffset: 4
-  //   }]
-  // };
-
-
-
-
-
-
 
 
 
 // // // // https://www.anychart.com/blog/2021/07/06/donut-charts-javascript/
 // // // https://playground.anychart.com/vDHOcQQZ/2
-
-
-
-
-// anychart.onDocumentReady(function () {
-  
-//   // add data
-//   var data = anychart.data.set([
-//     ['Spotify', 34],
-//     ['Apple Music', 21],
-//     ['Amazon Music', 15],
-//     ['Tencent apps', 11],
-//     ['YouTube Music', 6],
-//     ['Others', 13]
-//   ]);
-  
-//   // create a pie chart with the data
-//   var chart = anychart.pie(data);
-  
-//   // set the chart radius making a donut chart
-//   chart.innerRadius('55%')
-  
-//   // create a color palette
-//   var palette = anychart.palettes.distinctColors();
-  
-//   // set the colors according to the brands
-//   palette.items([
-//     { color: '#1dd05d' },
-//     { color: '#000000' },
-//     { color: '#00a3da' },
-//     { color: '#156ef2' },
-//     { color: '#f60000' },
-//     { color: '#96a6a6' }
-//   ]);
-
-//   // apply the donut chart color palette
-//   chart.palette(palette);
-  
-//   // set the position of labels
-//   chart.labels().format('{%x} - {%y}%').fontSize(16);
-  
-//   // disable the legend
-//   chart.legend(false);
-  
-//   // format the donut chart tooltip
-//   chart.tooltip().format('Market share: {%PercentValue}%');
-
-//   // create a standalone label
-//   var label = anychart.standalones.label();
-
-//   // configure the label settings
-//   label
-//     .useHtml(true)
-//     .text(
-//       '<span style = "color: #313136; font-size:20px;">Global Market Share of <br/> Music Streaming Apps</span>' +
-//       '<br/><br/></br><span style="color:#444857; font-size: 14px;"><i>Spotify and Apple Music have more <br/>than 50% of the total market share</i></span>'
-//     )
-//     .position('center')
-//     .anchor('center')
-//     .hAlign('center')
-//     .vAlign('middle');
-
-//   // set the label as the center content
-//   chart.center().content(label);
-  
-//   // set container id for the chart
-//   chart.container('container');
-  
-//   // initiate chart drawing
-//   chart.draw();
-  
-// });
 
