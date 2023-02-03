@@ -506,7 +506,7 @@
         </div>
         <div class="S7DivStructure">
             <div class="divS7SousStructure">
-                <h4 id="toSection7Btn" class="section-target"> Investments</h4>
+                <h4 id="toSection7" class="section-target"> Investments</h4>
                 <h5>start-ups in portfolio</h5>
             </div>
         </div>
@@ -531,19 +531,29 @@
 <section>
     <div class="S8DivContainer">
 
-
-      
-
       <div class="scrollSection"> 
 
-        <div class="backToTopDivBtn8">
-          <a href="#toSection7Btn" onclick="scrollToSection7()">
+        <!-- <div class="backToTopDivBtn8">
+          <a href="#toSection7" onclick="scrollToSection7()">
             <i class="fa-solid fa-arrow-up"></i>
           </a>
         </div>
         
         <div class="backToTopDivBtn8">
-          <a href="#toSection9Btn" onclick="scrollToSection9()">
+          <a href="#toSection9" onclick="scrollToSection9()">
+            <i class="fa-solid fa-arrow-down"></i>
+          </a>
+        </div> -->
+
+
+        <div class="backToTopDivBtn8">
+          <a href="#toSection7">
+            <i class="fa-solid fa-arrow-up"></i>
+          </a>
+        </div>
+        
+        <div class="backToTopDivBtn8">
+          <a href="#toSection9">
             <i class="fa-solid fa-arrow-down"></i>
           </a>
         </div>
@@ -2593,13 +2603,200 @@
 </div>
 </section>
 
+
+
+
+
+
+
+
+
+
+    
+    <!-- MAIN (Center website) -->
+    <div class="main">
+    
+      <h1>MYLOGO.COM</h1>
+      <hr>
+      
+      <h2>PORTFOLIO</h2>
+      
+      <div id="myBtnContainer">
+        <button class="btnFilter active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btnFilter" onclick="filterSelection('nature')"> Nature</button>
+        <button class="btnFilter" onclick="filterSelection('cars')"> Cars</button>
+        <button class="btnFilter" onclick="filterSelection('people')"> People</button>
+      </div>
+      
+      <!-- Portfolio Gallery Grid -->
+      <div class="row">
+        <div class="column nature">
+          <div class="content">
+            <img src="" alt="Mountains" style="width:100%">
+            <h4>Mountains</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        <div class="column nature">
+          <div class="content">
+          <img src="" alt="Lights" style="width:100%">
+            <h4>Lights</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        <div class="column nature">
+          <div class="content">
+          <img src="" alt="Nature" style="width:100%">
+            <h4>Forest</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        
+        <div class="column cars">
+          <div class="content">
+            <img src="" alt="Car" style="width:100%">
+            <h4>Retro</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        <div class="column cars">
+          <div class="content">
+          <img src="" alt="Car" style="width:100%">
+            <h4>Fast</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        <div class="column cars">
+          <div class="content">
+          <img src="" alt="Car" style="width:100%">
+            <h4>Classic</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+      
+        <div class="column people">
+          <div class="content">
+            <img src="" alt="Car" style="width:100%">
+            <h4>Girl</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        <div class="column people">
+          <div class="content">
+          <img src="" alt="Car" style="width:100%">
+            <h4>Man</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        <div class="column people">
+          <div class="content">
+          <img src="/w3images/people3.jpg" alt="Car" style="width:100%">
+            <h4>Woman</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+      <!-- END GRID -->
+      </div>
+      
+      <!-- END MAIN -->
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <section class="section9Intro">
     <div class="section9DivTitleHeader">
         <div class="box">
             <i class=" S4fontawesome fa-solid fa-book-atlas"></i>
         </div>
         <div class="section9DivStructureHeader">          
-            <h4 id="toSection9Btn"> Allocation </h4>
+            <h4 id="toSection9"> Allocation </h4>
             <h5>Current Haus Lothringen Potfolio allocation by country and by sectors expressed in committed funds</h5>
         </div>
     </div>
@@ -2715,12 +2912,22 @@
   </div>
 </section>
 
+
+
+
+
 <div id="preloader">
   <div class="preloader-circle"></div>
 </div>
 
+
+
+<script src="./public/script/main.js"></script>
+<script src="./public/script/team.js"></script>
+
 <script src="./node_modules/aos/aos.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="./public/script/main.js"></script>
+
+
 </body>
 </html>

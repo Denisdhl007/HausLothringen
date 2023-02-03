@@ -23630,6 +23630,74 @@ p {
   transition: 0.5s;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1, .h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
 .section6Intro {
   display: flex;
   background-color: rgb(232, 229, 226);
@@ -24241,12 +24309,162 @@ h2 a:hover, .h2 a:hover {
   margin-bottom: 16px;
 }
 
-/* Center website */
-.row {
-  margin: 8px -16px;
+.containerSection5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Add padding BETWEEN each column (if you want) */
+.sectionHeaderS5 h2, .sectionHeaderS5 .h2 {
+  padding: 0px;
+  margin: 4vh 0px 0px 0px;
+  font-family: "inter";
+  font-size: 20px;
+  color: grey;
+}
+
+.sectionHeaderS5 p {
+  padding: 0px;
+  margin: 1vh 0px 0px 0px;
+  font-family: "amatic";
+  font-size: 40px;
+  color: grey;
+}
+
+.sectionHeaderS5 p span {
+  color: lightblue;
+}
+
+.section5HeaderContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.tabHeaderTextCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5vh 0vw 3vh 0vw;
+  font-size: 30px;
+  font-family: "inter";
+}
+
+.tabHeaderTextCenter p {
+  margin: 0vh 0vw 0vh 0vw;
+  font-family: "inter";
+}
+
+.tabHeaderTextCenter h3, .tabHeaderTextCenter .h3 {
+  margin: 1vh 0vw 0vh 0vw;
+  font-size: 30px;
+  color: lightblue;
+  font-family: "inter";
+}
+
+.colLg4MenuItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30vw;
+  flex-wrap: wrap;
+}
+
+.menuImgFluid {
+  height: 35vh;
+  width: 18vw;
+  margin-top: 10px;
+}
+
+.colLg4MenuItem h4, .colLg4MenuItem .h4 {
+  font-family: "inter";
+  margin: 10px;
+  font-size: 25px;
+}
+
+.ingredientsPara {
+  font-family: "inter";
+  margin: 5px;
+  color: rgba(128, 128, 128, 0.695);
+}
+
+.navUlSection5 {
+  display: flex;
+  padding: 0px;
+}
+
+.navUlSection5 li {
+  display: flex;
+  text-decoration: none;
+  margin: 0vw 3vw 0vw 3vw;
+  color: rgba(128, 128, 128, 0.589);
+  font-family: "inter";
+}
+
+.navUlSection5 li :hover {
+  display: flex;
+  text-decoration: none;
+  color: lightblue;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.tabContent {
+  display: flex;
+}
+
+.tabPane {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rowGy5Section5 {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+.content h4, .content .h4 {
+  font-size: 20px;
+  font-family: "inter";
+}
+
+.pricePara {
+  font-family: "inter";
+  margin: 5px;
+  font-weight: bold;
+  color: lightblue;
+  font-size: 25px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1, .h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
 .row,
 .row > .column {
   padding: 8px;
@@ -24256,7 +24474,8 @@ h2 a:hover, .h2 a:hover {
 .column {
   float: left;
   width: 33.33%;
-  display: none; /* Hide columns by default */
+  display: none; /* Hide all elements by default */
+  text-align: center;
 }
 
 /* Clear floats after rows */
@@ -24266,35 +24485,44 @@ h2 a:hover, .h2 a:hover {
   clear: both;
 }
 
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
-}
-
 /* The "show" class is added to the filtered elements */
 .show {
   display: block;
 }
 
 /* Style the buttons */
-.btn {
+.btnFilter {
   border: none;
   outline: none;
   padding: 12px 16px;
   background-color: white;
   cursor: pointer;
+  font-family: "inter";
+  font-size: 18px;
+  display: inline-block;
+  position: relative;
 }
 
-/* Add a grey background color on mouse-over */
-.btn:hover {
-  background-color: #ddd;
+.btnFilter::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: lightblue;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
 
-/* Add a dark background color to the active button */
-.btn.active {
-  background-color: #666;
-  color: white;
+.btnFilter:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.btnFilter.active {
+  color: #000;
 }
 
 .section9Intro {
