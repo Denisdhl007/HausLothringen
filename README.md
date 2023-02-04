@@ -78,7 +78,9 @@ https://www.w3schools.com/js/tryit.asp?filename=tryai_chartjs_doughnut
 
 TIMELINE
 
-https://codepen.io/htmlcodex/pen/KKVpdNK
+   <!-- https://codepen.io/htmlcodex/pen/KKVpdNK -->
+   
+   https://codepen.io/htmlcodex/pen/KKVpdNK
 
 https://codepen.io/ktsn/pen/wrxymV
 

@@ -22190,6 +22190,201 @@ h1, .h1 {
   }
 }
 /*** Team ***/
+.teamS2 {
+  display: flex;
+  /* width: 95vw; */
+  flex-direction: column;
+  align-items: center;
+  height: 95vh;
+}
+
+.teamS2Div {
+  display: flex;
+  border: 1px solid #000;
+  border-radius: 30px;
+  width: 95vw;
+  height: 92vh;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section6Text {
+  display: flex;
+  margin-top: 5vh;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section6Text h1, .section6Text .h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container4 {
+  height: 65vh;
+  width: 100vw;
+  max-width: 1280px;
+  min-width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.cardsHeaderS4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardsHeaderS4 h1, .cardsHeaderS4 .h1 {
+  padding: 15px;
+  margin: 0px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.borderS4 {
+  height: 369px;
+  width: 290px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+}
+
+.borderS4:hover {
+  border: 1px solid #fff;
+}
+
+.card4 {
+  height: 379px;
+  width: 300px;
+  background: #808080;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 70px 63px -60px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card0 {
+  background: url("../../public/img/team/teamIcon1.jpeg") center center no-repeat;
+  background-size: 380px;
+}
+
+.card0:hover {
+  background: url("../../public/img/team/teamIcon1.jpeg") left center no-repeat;
+  background-size: 600px;
+}
+
+.card0:hover h2, .card0:hover .h2 {
+  opacity: 1;
+}
+
+.card0:hover .fab {
+  opacity: 1;
+}
+
+.card0:hover .cardsHeaderS4 h1, .card0:hover .cardsHeaderS4 .h1 {
+  display: none;
+}
+
+.card1 {
+  background: url("../../public/img/team/others/teamIcon2.png") center center no-repeat;
+  background-size: 280px;
+}
+
+.card1:hover {
+  background: url("../../public/img/team/others/teamIcon2.png") left center no-repeat;
+  background-size: 600px;
+}
+
+.card1:hover h2, .card1:hover .h2 {
+  opacity: 1;
+}
+
+.card1:hover .fab {
+  opacity: 1;
+}
+
+.card2 {
+  background: url("../../public/img/team/teamIcon3.jpeg") center center no-repeat;
+  background-size: 380px;
+}
+
+.card2:hover {
+  background: url("../../public/img/team/teamIcon3.jpeg") left center no-repeat;
+  background-size: 600px;
+}
+
+.card2:hover h2, .card2:hover .h2 {
+  opacity: 1;
+}
+
+.card2:hover .fab {
+  opacity: 1;
+}
+
+.card3 {
+  background: url("../../public/img/team/teamIcon4.jpeg") center center no-repeat;
+  background-size: 380px;
+}
+
+.card3:hover {
+  background: url("../../public/img/team/teamIcon4.jpeg") left center no-repeat;
+  background-size: 600px;
+}
+
+.card3:hover h2, .card3:hover .h2 {
+  opacity: 1;
+}
+
+.card3:hover .fab {
+  opacity: 1;
+}
+
+.borderS4 h2, .borderS4 .h2 {
+  color: #000000;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.fab {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.iconsS4 {
+  position: absolute;
+  fill: #000000;
+  color: #000000;
+  height: 130px;
+  top: 226px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.iconsS4 a {
+  text-decoration: none;
+  color: rgba(143, 241, 237, 0.894);
+}
+
+.iconsS4 a :hover {
+  color: #808080;
+}
+
 .team-item .team-text {
   position: relative;
   height: 100px;
@@ -22233,21 +22428,6 @@ h1, .h1 {
 
 .team-item:hover .team-social {
   top: 0;
-}
-
-.section6Text {
-  display: flex;
-  margin-top: 5vh;
-  align-items: center;
-  flex-direction: column;
-}
-
-.section6Text h1, .section6Text .h1 {
-  display: flex;
-  width: 17vw;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 }
 
 .section6ContainerCards4 {
@@ -22682,7 +22862,7 @@ h1, .h1 {
   margin: 0;
   padding: 30px 0;
   text-align: center;
-  background: linear-gradient(#e0d034, #4eeee9);
+  background: linear-gradient(#f9f4c1, #4eeee9);
   border-radius: 100px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
   color: #000;
@@ -23569,169 +23749,6 @@ p {
     to { transform: scale(1, 1); }
   }
   */
-.container4 {
-  height: 65vh;
-  width: 100vw;
-  max-width: 1280px;
-  min-width: 1000px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0 auto;
-}
-
-.cardsHeaderS4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.cardsHeaderS4 h1, .cardsHeaderS4 .h1 {
-  padding: 15px;
-  margin: 0px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.borderS4 {
-  height: 369px;
-  width: 290px;
-  background: transparent;
-  border-radius: 10px;
-  transition: border 1s;
-  position: relative;
-}
-
-.borderS4:hover {
-  border: 1px solid #fff;
-}
-
-.card4 {
-  height: 379px;
-  width: 300px;
-  background: #808080;
-  border-radius: 10px;
-  transition: background 0.8s;
-  overflow: hidden;
-  background: #000;
-  box-shadow: 0 70px 63px -60px #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.card0 {
-  background: url("../../public/img/team/teamIcon1.jpeg") center center no-repeat;
-  background-size: 380px;
-}
-
-.card0:hover {
-  background: url("../../public/img/team/teamIcon1.jpeg") left center no-repeat;
-  background-size: 600px;
-}
-
-.card0:hover h2, .card0:hover .h2 {
-  opacity: 1;
-}
-
-.card0:hover .fab {
-  opacity: 1;
-}
-
-.card0:hover .cardsHeaderS4 h1, .card0:hover .cardsHeaderS4 .h1 {
-  display: none;
-}
-
-.card1 {
-  background: url("../../public/img/team/others/teamIcon2.png") center center no-repeat;
-  background-size: 280px;
-}
-
-.card1:hover {
-  background: url("../../public/img/team/others/teamIcon2.png") left center no-repeat;
-  background-size: 600px;
-}
-
-.card1:hover h2, .card1:hover .h2 {
-  opacity: 1;
-}
-
-.card1:hover .fab {
-  opacity: 1;
-}
-
-.card2 {
-  background: url("../../public/img/team/teamIcon3.jpeg") center center no-repeat;
-  background-size: 380px;
-}
-
-.card2:hover {
-  background: url("../../public/img/team/teamIcon3.jpeg") left center no-repeat;
-  background-size: 600px;
-}
-
-.card2:hover h2, .card2:hover .h2 {
-  opacity: 1;
-}
-
-.card2:hover .fab {
-  opacity: 1;
-}
-
-.card3 {
-  background: url("../../public/img/team/teamIcon4.jpeg") center center no-repeat;
-  background-size: 380px;
-}
-
-.card3:hover {
-  background: url("../../public/img/team/teamIcon4.jpeg") left center no-repeat;
-  background-size: 600px;
-}
-
-.card3:hover h2, .card3:hover .h2 {
-  opacity: 1;
-}
-
-.card3:hover .fab {
-  opacity: 1;
-}
-
-h2, .h2 {
-  color: #000000;
-  margin: 20px;
-  opacity: 0;
-  transition: opacity 1s;
-}
-
-.fab {
-  opacity: 0;
-  transition: opacity 1s;
-}
-
-.iconsS4 {
-  position: absolute;
-  fill: #000000;
-  color: #000000;
-  height: 130px;
-  top: 226px;
-  width: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.iconsS4 a {
-  text-decoration: none;
-  color: rgba(143, 241, 237, 0.894);
-}
-
-.iconsS4 a :hover {
-  color: #808080;
-}
-
 .section5Intro {
   display: flex;
   background-color: white;
