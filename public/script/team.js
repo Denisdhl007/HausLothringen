@@ -1,5 +1,29 @@
 // Section Team 
 
+// aos initialisation
+AOS.init();
+
+// Preloader
+
+document.addEventListener('DOMContentLoaded', () => {
+  "use strict";
+  // Preloader
+  const preloader = document.querySelector('#preloader');
+if (preloader) {
+  console.log("Preloader element found");
+  window.addEventListener('load', () => {
+    console.log("Window load event fired");
+    setTimeout(() => {
+      preloader.remove();
+    }, 1000);
+
+  });
+} else {
+  console.log("Preloader element not found");
+}
+
+
+
 // //Section World Map
 // jQuery(document).ready()(function(){
 //   tippy('.tippy', {
@@ -32,3 +56,8 @@
 //     textbox.style.display = "block";
 //     }
 // });
+
+
+
+});
+

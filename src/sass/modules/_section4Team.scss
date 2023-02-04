@@ -1,0 +1,193 @@
+
+.container4 {
+  height: 65vh;
+  width: 100vw;
+  // max-height: 800px;
+  max-width: 1280px;
+  // min-height: 600px;
+  min-width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.cardsHeaderS4{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardsHeaderS4 h1{
+  padding: 15px;
+  margin: 0px;
+  font-size: 30px;
+  text-align: center;;
+}
+
+.borderS4 {
+  height: 369px;
+  width: 290px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+}
+
+.borderS4:hover {
+  border: 1px solid #fff;
+}
+
+.card4 {
+  height: 379px;
+  width: 300px;
+  background: #808080;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 70px 63px -60px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+
+
+// CARD 0
+.card0 {
+  background: url("../../public/img/team/teamIcon1.jpeg")
+    center center no-repeat;
+  background-size: 380px;
+}
+
+.card0:hover {
+  background: url("../../public/img/team/teamIcon1.jpeg")
+    left center no-repeat;
+  background-size: 600px;
+}
+
+.card0:hover h2 {
+  opacity: 1;
+}
+
+.card0:hover .fab {
+  opacity: 1;
+}
+
+.card0:hover .cardsHeaderS4 h1{
+  display: none;
+}
+
+
+// CARD 1
+.card1 {
+  background: url("../../public/img/team/others/teamIcon2.png")
+    center center no-repeat;
+  background-size: 280px;
+}
+
+.card1:hover {
+  background: url("../../public/img/team/others/teamIcon2.png")
+    left center no-repeat;
+  background-size: 600px;
+}
+
+.card1:hover h2 {
+  opacity: 1;
+}
+
+.card1:hover .fab {
+  opacity: 1;
+}
+
+
+
+
+
+
+// CARD 2
+.card2 {
+  background: url("../../public/img/team/teamIcon3.jpeg")
+    center center no-repeat;
+  background-size: 380px;
+}
+
+.card2:hover {
+  background: url("../../public/img/team/teamIcon3.jpeg")
+    left center no-repeat;
+  background-size: 600px;
+}
+
+.card2:hover h2 {
+  opacity: 1;
+}
+
+.card2:hover .fab {
+  opacity: 1;
+}
+
+
+
+// CARD 3
+.card3 {
+  background: url("../../public/img/team/teamIcon4.jpeg")
+    center center no-repeat;
+  background-size: 380px;
+}
+
+.card3:hover {
+  background: url("../../public/img/team/teamIcon4.jpeg")
+    left center no-repeat;
+  background-size: 600px;
+}
+
+.card3:hover h2 {
+  opacity: 1;
+}
+
+.card3:hover .fab {
+  opacity: 1;
+}
+
+
+
+
+
+h2 {
+  // font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000000;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.fab {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.iconsS4 {
+  position: absolute;
+  fill: #000000;
+  color: #000000;
+  height: 130px;
+  top: 226px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.iconsS4 a {
+  text-decoration: none;
+  color: rgba(143, 241, 237, 0.894);
+}
+
+.iconsS4 a :hover {
+  color: #808080;
+};

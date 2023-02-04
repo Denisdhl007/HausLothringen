@@ -12,8 +12,11 @@
 // var image = document.getElementsById('thumbnail');
 // new simpleParallax(image);
 
+// aos initialisation
+AOS.init();
 
 
+// Preloader
 
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
@@ -35,7 +38,6 @@ if (preloader) {
 
 
 // Entire body
-
 
 // document.getElementById("show-overlay-button").addEventListener("click", function(){
 //   document.getElementById("overlay").style.display = "block";

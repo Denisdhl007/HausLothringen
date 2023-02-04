@@ -21400,6 +21400,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0px;
   font-family: playfair;
@@ -22029,6 +22033,7 @@ footer {
 .social-icons li i {
   color: rgb(255, 255, 255);
   font-size: 25px;
+  cursor: pointer;
 }
 
 .social-icons li i:hover {
@@ -22048,6 +22053,7 @@ footer {
   background-color: rgba(0, 0, 0, 0.638);
   color: white;
   border: 1px solid rgb(255, 255, 255);
+  cursor: pointer;
 }
 
 .backToTopBtn1 i {
@@ -22227,6 +22233,83 @@ h1, .h1 {
 
 .team-item:hover .team-social {
   top: 0;
+}
+
+.section6Text {
+  display: flex;
+  margin-top: 5vh;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section6Text h1, .section6Text .h1 {
+  display: flex;
+  width: 17vw;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.section6ContainerCards4 {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cardSection6 {
+  transition: 0.3s;
+  margin: 4vw 4vh;
+}
+
+.section6ContainerCard {
+  width: 17vw;
+  height: 32vh;
+  background-color: rgba(255, 233, 192, 0.59);
+  border-radius: 8px 8px 0px 0px;
+}
+
+.section6SmallContainer {
+  display: flex;
+  height: 17vh;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fcf4ec;
+  border-radius: 0px 0px 8px 8px;
+  justify-content: center;
+}
+
+.section6SmallContainer:hover {
+  background-color: orange;
+  transition: 0.5s;
+}
+
+.section6SmallContainer h4, .section6SmallContainer .h4 {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+}
+
+.section6SmallContainer p {
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+}
+
+.section6SocialMadiaCard {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+
+.section6SocialMadiaCard i {
+  display: flex;
+  font-size: 25px;
+  border-radius: 50px;
+  background-color: #fcf4ec;
+  padding: 15px;
 }
 
 .section2large {
@@ -23486,6 +23569,169 @@ p {
     to { transform: scale(1, 1); }
   }
   */
+.container4 {
+  height: 65vh;
+  width: 100vw;
+  max-width: 1280px;
+  min-width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.cardsHeaderS4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardsHeaderS4 h1, .cardsHeaderS4 .h1 {
+  padding: 15px;
+  margin: 0px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.borderS4 {
+  height: 369px;
+  width: 290px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+}
+
+.borderS4:hover {
+  border: 1px solid #fff;
+}
+
+.card4 {
+  height: 379px;
+  width: 300px;
+  background: #808080;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 70px 63px -60px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card0 {
+  background: url("../../public/img/team/teamIcon1.jpeg") center center no-repeat;
+  background-size: 380px;
+}
+
+.card0:hover {
+  background: url("../../public/img/team/teamIcon1.jpeg") left center no-repeat;
+  background-size: 600px;
+}
+
+.card0:hover h2, .card0:hover .h2 {
+  opacity: 1;
+}
+
+.card0:hover .fab {
+  opacity: 1;
+}
+
+.card0:hover .cardsHeaderS4 h1, .card0:hover .cardsHeaderS4 .h1 {
+  display: none;
+}
+
+.card1 {
+  background: url("../../public/img/team/others/teamIcon2.png") center center no-repeat;
+  background-size: 280px;
+}
+
+.card1:hover {
+  background: url("../../public/img/team/others/teamIcon2.png") left center no-repeat;
+  background-size: 600px;
+}
+
+.card1:hover h2, .card1:hover .h2 {
+  opacity: 1;
+}
+
+.card1:hover .fab {
+  opacity: 1;
+}
+
+.card2 {
+  background: url("../../public/img/team/teamIcon3.jpeg") center center no-repeat;
+  background-size: 380px;
+}
+
+.card2:hover {
+  background: url("../../public/img/team/teamIcon3.jpeg") left center no-repeat;
+  background-size: 600px;
+}
+
+.card2:hover h2, .card2:hover .h2 {
+  opacity: 1;
+}
+
+.card2:hover .fab {
+  opacity: 1;
+}
+
+.card3 {
+  background: url("../../public/img/team/teamIcon4.jpeg") center center no-repeat;
+  background-size: 380px;
+}
+
+.card3:hover {
+  background: url("../../public/img/team/teamIcon4.jpeg") left center no-repeat;
+  background-size: 600px;
+}
+
+.card3:hover h2, .card3:hover .h2 {
+  opacity: 1;
+}
+
+.card3:hover .fab {
+  opacity: 1;
+}
+
+h2, .h2 {
+  color: #000000;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.fab {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.iconsS4 {
+  position: absolute;
+  fill: #000000;
+  color: #000000;
+  height: 130px;
+  top: 226px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.iconsS4 a {
+  text-decoration: none;
+  color: rgba(143, 241, 237, 0.894);
+}
+
+.iconsS4 a :hover {
+  color: #808080;
+}
+
 .section5Intro {
   display: flex;
   background-color: white;
@@ -23735,9 +23981,12 @@ h1, .h1 {
   font-size: 25px;
 }
 
+.containerS6headerbg {
+  background-color: rgb(232, 229, 226);
+}
+
 .containerS6header {
   display: flex;
-  background-color: rgb(232, 229, 226);
   justify-content: center;
   width: 100vw;
 }
@@ -24126,7 +24375,7 @@ h1, .h1 {
   position: -webkit-sticky;
   position: sticky;
   display: flex;
-  top: 20vh;
+  top: 42vh;
   margin-left: 89vw;
   flex-direction: column;
   justify-content: center;
@@ -24156,6 +24405,7 @@ h1, .h1 {
   color: rgba(131, 212, 247, 0.795);
   border: 1px solid rgba(131, 212, 247, 0.795);
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .containerS8 {
@@ -24582,10 +24832,13 @@ h1, .h1 {
   align-items: center;
 }
 
+.charts2displaybg {
+  background-color: rgba(222, 222, 222, 0.804);
+}
+
 .charts2display {
   display: flex;
   justify-content: space-evenly;
-  background-color: rgba(222, 222, 222, 0.804);
 }
 
 .chart1section {

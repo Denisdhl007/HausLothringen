@@ -1,5 +1,5 @@
-
 /*** Team ***/
+
 .team-item .team-text {
     position: relative;
     height: 100px;
@@ -44,3 +44,83 @@
 .team-item:hover .team-social {
     top: 0;
 }
+
+
+
+.section6Text{
+    display: flex;
+    margin-top: 5vh;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .section6Text h1{
+    display: flex;
+    width: 17vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .section6ContainerCards4{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .cardSection6 {
+    transition: 0.3s;
+    margin: 4vw 4vh;
+  }
+  
+  .section6ContainerCard{
+    width: 17vw;
+    height: 32vh;
+    background-color: rgba(255, 233, 192, 0.59);
+    border-radius: 8px 8px 0px 0px;
+  }
+  
+  .section6SmallContainer {
+    display: flex;
+    height: 17vh;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fcf4ec;
+    border-radius: 0px 0px 8px 8px;
+    justify-content: center;
+  }
+  
+  .section6SmallContainer:hover{
+    background-color: orange;
+    transition: 0.5s;
+  }
+  
+  .section6SmallContainer h4{
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+  }
+  
+  .section6SmallContainer p{
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+  }
+  
+  .section6SocialMadiaCard{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+  }
+  
+  .section6SocialMadiaCard i{
+    display: flex;
+    font-size: 25px;
+    border-radius: 50px;
+    background-color: #fcf4ec;
+    padding: 15px;
+  }
+

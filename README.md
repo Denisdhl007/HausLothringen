@@ -2,7 +2,7 @@
 SLIDER
 
   
-        https://codepen.io/argyleink/pen/yLovWjz
+https://codepen.io/argyleink/pen/yLovWjz
 
 
 https://freefrontend.com/jquery-menus/
@@ -267,53 +267,72 @@ https://codepen.io/alphardex/pen/vYYoBNR
 
 
 
+
+
+
 <!-- 
-        
-        <div class="divTextFlow2">
-            <div class="divMarquee">
-                <div class="divMarqueeH3">
-                    <h3>SEED</h3>
-                </div>
-                <div class="divMarqueeMini">
-                    <marquee class="S1Marquee" direction="up" scrollamount="2.8">
-                    <p>
-                    (£150,000 - £249,000) <br>
-                    (170.000€ - 284.000€) <br>
-                    (179.000$ - 299.000$) <br>
-                    </p>
-                    </marquee>
-                </div>
-            </div>
-
-            <div class="divMarquee">
-                <div class="divMarqueeH3">
-                    <h3>EARLY</h3>
-                </div>
-                <div class="divMarqueeMini">
-                    <marquee class="S1Marquee" direction="up" scrollamount="3">
-                    <p>
-                    (£250,000 - £750,000) <br>
-                    (285.000€ - 854.000€) <br>
-                    (300.000$ - 899.000$) <br>
-                    </p>
-                    </marquee>
-                </div>
-            </div>
-
-            <div class="divMarquee">
-                <div class="divMarqueeH3">
-                    <h3>GROWTH/LATE SEED/SERIES-A</h3>
-                </div>
-                <div class="divMarqueeMini">
-                    <marquee class="S1Marquee" direction="up" scrollamount="2.5">
-                    <p>
-                    (£751,000+) <br>
-                    (855.000€+) <br>
-                    (899.000$+) <br>
-                    </p>
-                    </marquee>
-                </div>
-            </div>
-        </div> -->
+https://codepen.io/fredericrous/pen/xxVXJYX -->
 
 
+
+<!-- 
+
+https://codepen.io/maxym11/pen/dyGEzay -->
+<!-- 
+https://codepen.io/fredericrous/pen/xxVXJYX -->
+
+https://codepen.io/marlenesco/pen/NqOozj
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 9 -->
+<!-- <section>
+    <div class="S9DivContainer">
+      <ul class="chart">
+        <li>
+          <span style="height:66%" title="United Kingdom 66%"></span>
+        </li>
+        <li>
+          <span style="height:13%" title="United States 13%"></span>
+        </li>
+        <li>
+          <span style="height:4%" title="France 4%"></span>
+        </li>
+        <li>
+          <span style="height:1%" title="The Netherlands 1%"></span>
+        </li>
+        <li>
+          <span style="height:2%" title="Portugal 2%"></span>
+        </li>
+        <li>
+          <span style="height:2%" title="Spain 2%"></span>
+        </li>
+        <li>
+          <span style="height:5%" title="Sweden 5%"></span>
+        </li>
+        <li>
+          <span style="height:2%" title="Switzerland 2%"></span>
+        </li>
+        <li>
+          <span style="height:2%" title="Estonia 2%"></span>
+        </li>
+        <li>
+          <span style="height:4%" title=" others* 4%"></span>
+        </li>
+      </ul>  
+    </div>
+
+    <div class="othersChart">
+      <p>Canada, Colombia, Finland, Israël, Italy, Lithuania, Luxembourg, Metaverse, Norway</p>
+    </div>
+</section> -->
