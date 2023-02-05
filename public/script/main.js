@@ -22,22 +22,22 @@ AOS.init();
 
 
 
-// document.addEventListener('DOMContentLoaded', () => {
-//   "use strict";
-//   // Preloader
-//   const preloader = document.querySelector('#preloader');
-// if (preloader) {
-//   console.log("Preloader element found");
-//   window.addEventListener('load', () => {
-//     console.log("Window load event fired");
-//     setTimeout(() => {
-//       preloader.remove();
-//     }, 1000);
+document.addEventListener('DOMContentLoaded', () => {
+  "use strict";
+  // Preloader
+  const preloader = document.querySelector('#preloader');
+if (preloader) {
+  console.log("Preloader element found");
+  window.addEventListener('load', () => {
+    console.log("Window load event fired");
+    setTimeout(() => {
+      preloader.remove();
+    }, 1000);
 
-//   });
-// } else {
-//   console.log("Preloader element not found");
-// }
+  });
+} else {
+  console.log("Preloader element not found");
+}
 
 
 
@@ -467,7 +467,7 @@ function classToggle() {
 
 
 
-// });
+});
 
 
 
